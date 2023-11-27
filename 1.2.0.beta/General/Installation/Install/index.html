@@ -1,0 +1,1964 @@
+
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://example.com/1.2.0.beta/General/Installation/Install/">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.5">
+    
+    
+      
+        <title>Установка - WDC.Платформа. Документация</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.2d9f7617.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-component="outdated" hidden>
+        <aside class="md-banner md-banner--warning">
+          
+            <div class="md-banner__inner md-grid md-typeset">
+              
+  Вы просматриваете не актуальную версию документации.
+  <a href="../../../.."> 
+    <strong>Нажмите здесь что бы переключится на актуальную.</strong>
+  </a>
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),outdated=__md_get("__outdated",sessionStorage);!0===outdated&&el&&(el.hidden=!1)</script>
+          
+        </aside>
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    <a href="../../.." title="WDC.Платформа. Документация" class="md-header__button md-logo" aria-label="WDC.Платформа. Документация" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            WDC.Платформа. Документация
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Установка
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Поиск">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Очистить" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Вкладки" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../.." class="md-tabs__link">
+      WDC.Платформа
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../General_description/General_description/" class="md-tabs__link md-tabs__link--active">
+        Общие описания
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../OTL/OTL_commands/OTL_commands/" class="md-tabs__link">
+        Языки OTL и SMaLL
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../Optional/GrafanaPlugin/GrafanaPlugin/" class="md-tabs__link">
+        Компоненты WDC.Платформы
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../license/" class="md-tabs__link">
+      Лицензионное соглашение
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="https://t.me/WDCPlatform" class="md-tabs__link">
+      Остались вопросы?
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="WDC.Платформа. Документация" class="md-nav__button md-logo" aria-label="WDC.Платформа. Документация" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    WDC.Платформа. Документация
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        WDC.Платформа
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Общие описания
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Общие описания" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Общие описания
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../General_description/General_description/" class="md-nav__link">
+        О WDC.Платформе
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Установка
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Установка
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание раздела">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание раздела
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wdc" class="md-nav__link">
+    Установка WDC.Платформы
+  </a>
+  
+    <nav class="md-nav" aria-label="Установка WDC.Платформы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    Установка ПО для виртуализации
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    Подключение образа
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    Первичный запуск виртуальной машины
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ip-" class="md-nav__link">
+    Настройка IP-адреса машины для работы с сервисами
+  </a>
+  
+    <nav class="md-nav" aria-label="Настройка IP-адреса машины для работы с сервисами">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dhcp-" class="md-nav__link">
+    При наличии DHCP-сервера
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dhcp-_1" class="md-nav__link">
+    При отсутствии DHCP-сервера
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wdc_1" class="md-nav__link">
+    Запуск WDC.Платформы и доступ к сервисам
+  </a>
+  
+    <nav class="md-nav" aria-label="Запуск WDC.Платформы и доступ к сервисам">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#eva" class="md-nav__link">
+    Вход в EVA
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apache-nifi" class="md-nav__link">
+    Вход в Apache NiFi
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apache-spark" class="md-nav__link">
+    Вход в Apache Spark
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ssh" class="md-nav__link">
+    Подключение по SSH
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Beginning/Beginning_of_work/" class="md-nav__link">
+        Начало работы
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../EVA/EVA/" class="md-nav__link">
+        EVA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DataCAD/DataCAD/" class="md-nav__link">
+        DataCAD
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Языки OTL и SMaLL
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Языки OTL и SMaLL" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Языки OTL и SMaLL
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../OTL/OTL_commands/OTL_commands/" class="md-nav__link">
+        Команды языка OTL
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/SMaLL/" class="md-nav__link">
+        SMaLL
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../SMaLL/">Плагин MLCore</a>
+          
+            <label for="__nav_3_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Плагин MLCore" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Плагин MLCore
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/datasets/" class="md-nav__link">
+        Демонстрационные датасеты
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_3" type="checkbox" id="__nav_3_3_3" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_3">
+          Классификация
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Классификация" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Классификация
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/classification/logreg/" class="md-nav__link">
+        Логистическая регрессия
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/classification/decision_tree/" class="md-nav__link">
+        Решающее дерево
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/classification/rf/" class="md-nav__link">
+        Случайный лес
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/classification/gb/" class="md-nav__link">
+        Градиентный бустинг
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/classification/catboost/" class="md-nav__link">
+        CatBoost
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_4" type="checkbox" id="__nav_3_3_4" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_4">
+          Регрессия
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Регрессия" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Регрессия
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/regression/lr/" class="md-nav__link">
+        Линейная регрессия
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/regression/rf/" class="md-nav__link">
+        Случайный лес
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/regression/gb/" class="md-nav__link">
+        Градиентный бустинг
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/regression/catboost/" class="md-nav__link">
+        CatBoost
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_5" type="checkbox" id="__nav_3_3_5" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_5">
+          Кластеризация
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Кластеризация" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          Кластеризация
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/clustering/kmeans/" class="md-nav__link">
+        K-Means
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/clustering/dbscan/" class="md-nav__link">
+        DBSCAN
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_6" type="checkbox" id="__nav_3_3_6" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_6">
+          Временные ряды
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Временные ряды" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_6">
+          <span class="md-nav__icon md-icon"></span>
+          Временные ряды
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/ts/trend_detection/" class="md-nav__link">
+        Определение тренда
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/ts/predict/" class="md-nav__link">
+        Прогнозирование
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_7" type="checkbox" id="__nav_3_3_7" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_7">
+          Поиск аномалий
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Поиск аномалий" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_7">
+          <span class="md-nav__icon md-icon"></span>
+          Поиск аномалий
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/anomaly/lof/" class="md-nav__link">
+        Local Outlier Factor
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/anomaly/zscore/" class="md-nav__link">
+        Z-score
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/anomaly/iqr/" class="md-nav__link">
+        IQR
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/anomaly/mad/" class="md-nav__link">
+        MAD
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/anomaly/if/" class="md-nav__link">
+        Isolation Forest
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_8" type="checkbox" id="__nav_3_3_8" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_8">
+          Работа с признаками
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Работа с признаками" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_8">
+          <span class="md-nav__icon md-icon"></span>
+          Работа с признаками
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/features/pca/" class="md-nav__link">
+        PCA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_8_2" type="checkbox" id="__nav_3_3_8_2" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_8_2">
+          Заполнение пропусков
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Заполнение пропусков" data-md-level="4">
+        <label class="md-nav__title" for="__nav_3_3_8_2">
+          <span class="md-nav__icon md-icon"></span>
+          Заполнение пропусков
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/features/fillna/" class="md-nav__link">
+        Fill NA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/features/imputer/" class="md-nav__link">
+        Imputer
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/features/sample/" class="md-nav__link">
+        Сэмплирование
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/features/scaling/" class="md-nav__link">
+        Масштабирование (scaling)
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_9" type="checkbox" id="__nav_3_3_9" >
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_9">
+          Статистические функции
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Статистические функции" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_9">
+          <span class="md-nav__icon md-icon"></span>
+          Статистические функции
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/stats/correlation/" class="md-nav__link">
+        Корреляции Пирсона и Спирмена
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/BPM_Commands/" class="md-nav__link">
+        Плагин ВРМ
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/ExternalDataPlugin/" class="md-nav__link">
+        Плагин ExternalData
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/InstallingExtensions/" class="md-nav__link">
+        Установка расширений языка SMaLL
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Компоненты WDC.Платформы
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Компоненты WDC.Платформы" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Компоненты WDC.Платформы
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Optional/GrafanaPlugin/GrafanaPlugin/" class="md-nav__link">
+        Плагин для Grafana
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Optional/ConsoleQueryLauncher/ConsoleQueryLauncher/" class="md-nav__link">
+        Консольная утилита запуска запросов
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        Лицензионное соглашение
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://t.me/WDCPlatform" class="md-nav__link">
+        Остались вопросы?
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание раздела">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание раздела
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wdc" class="md-nav__link">
+    Установка WDC.Платформы
+  </a>
+  
+    <nav class="md-nav" aria-label="Установка WDC.Платформы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    Установка ПО для виртуализации
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    Подключение образа
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    Первичный запуск виртуальной машины
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ip-" class="md-nav__link">
+    Настройка IP-адреса машины для работы с сервисами
+  </a>
+  
+    <nav class="md-nav" aria-label="Настройка IP-адреса машины для работы с сервисами">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dhcp-" class="md-nav__link">
+    При наличии DHCP-сервера
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dhcp-_1" class="md-nav__link">
+    При отсутствии DHCP-сервера
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wdc_1" class="md-nav__link">
+    Запуск WDC.Платформы и доступ к сервисам
+  </a>
+  
+    <nav class="md-nav" aria-label="Запуск WDC.Платформы и доступ к сервисам">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#eva" class="md-nav__link">
+    Вход в EVA
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apache-nifi" class="md-nav__link">
+    Вход в Apache NiFi
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apache-spark" class="md-nav__link">
+    Вход в Apache Spark
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ssh" class="md-nav__link">
+    Подключение по SSH
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h2 id="_1"></h2>
+<h1 id="wdc">Установка WDC.Платформы</h1>
+<p><strong>WDC.Платформа</strong> предоставляется в виде образа жесткого диска, готового для
+работы. Для запуска используется программное обеспечение для виртуализации с
+открытым исходным кодом – <strong>Oracle</strong> <strong>VirtualBox</strong>.</p>
+<p>Если данное ПО отсутствует на Вашем компьютере, то скачать файл установки
+последней актуальной версии Oracle VirtualBox можно на официальном сайте в
+разделе "Downloads": <a href="https://www.virtualbox.org/wiki/Downloads">https://www.virtualbox.org/wiki/Downloads</a>.</p>
+<p>После чего следует установить дистрибутивные файлы виртуальной машины.</p>
+<h2 id="_2">Установка ПО для виртуализации</h2>
+<p>После завершения скачивания необходимо запустить файл и установить ПО.</p>
+<p>Процедура установки является типовой – во всех диалоговых окнах достаточно
+нажать кнопку "Next":</p>
+<p><img alt="" src="../media/5ccc1357ecca8442239a460e3234c070.png" /></p>
+<p>В следующем окне можно указать путь расположения установки программы. Изменять
+его не имеет особого смысла, так как в дальнейшем все подключаемые и создаваемые
+образы могут находиться в любом месте по Вашему усмотрению.</p>
+<p>По умолчанию установка производится в папку <strong>Program
+files\Oracle\VirtualBox</strong>:</p>
+<p><img alt="" src="../media/cbb28779a84c54e12cb98e249dd0948f.png" /></p>
+<p>В следующем окне отметки, управляющие созданием ярлыков по завершению установки,
+рекомендуется оставить без изменений:</p>
+<p><img alt="" src="../media/c485d49a896764b234f41c8fac51f0bc.png" /></p>
+<p>И по нажатию кнопки "Next" откроется очередное окно с предупреждением о
+недоступности на короткое время сетевого подключения во время установки продукта
+и смело нажимаем кнопку "Yes":</p>
+<p><img alt="" src="../media/939435e68402c2c99262438630cbb3db.png" /></p>
+<p>Перемещаемся в следующее диалоговое окно и нажимаем "Install":</p>
+<p><img alt="" src="../media/2ff746bc361c3c0fa806fed9177e86ba.png" /></p>
+<blockquote>
+<p><em><strong>Важно!</strong> <br />
+При появлении диалогового окна, представленного на рисунке ниже, необходимо
+установить отметку в поле "Always trust software “Oracle Corporation”" и нажать
+кнопку "Install". В противном случае работа с сетью в VirtualBox будет
+невозможна.</em></p>
+<p><img alt="" src="../media/fdddbbd70503b2cb8f6926d610eba527.png" /></p>
+</blockquote>
+<p>По окончанию установки нажмите кнопку "Finish":</p>
+<p><img alt="" src="../media/3a0e2bbce0590c563d2e8a84c0c0e759.png" /></p>
+<h2 id="_3">Подключение образа</h2>
+<p>На этом этапе работы требуется импортировать загруженные файлы виртуальной
+машины:</p>
+<ul>
+<li>
+<p><strong>ot_platform</strong><em>-\&lt;номер версии></em><strong>.ovf</strong></p>
+</li>
+<li>
+<p><strong>ot_platform</strong><em>-\&lt;номер версии></em><strong>.ova</strong></p>
+</li>
+</ul>
+<p>Запустите главное окно программы <strong>VirtualBox</strong>, в меню "Файл" выберите команду
+"Импорт конфигураций":</p>
+<p><img alt="" src="../media/9363d71afb1a2fe993d739925b3843fd.png" /></p>
+<p>Выполните импорт образа согласно приведённой ниже инструкции.</p>
+<p>В поле "Источник" оставьте без изменений (там должно быть – "Локальная файловая
+система"):</p>
+<p><img alt="" src="../media/5701b6f4865d27151bf016bf5597d76f.png" /></p>
+<p>Заполните поле "Файл", нажав на иконку выбора папки, для этого в появившемся
+окне выберите дистрибутивный файл импортируемой конфигурации с расширением
+".OVF":</p>
+<p><img alt="" src="../media/605522c9f2cfb35115ddd8619de95d8b.png" /></p>
+<p>И после возврата в окно "Выберите конфигурацию" нажмите там кнопку "Далее":</p>
+<p><img alt="" src="../media/381f6b088b0dcac36bec89b177171af6.png" /></p>
+<p>Далее, в окне "Укажите параметры импорта" будет представлен обзор импортируемой
+конфигурации. Здесь оставляем всё без изменений.</p>
+<p>При желании можно изменить папку расположения файлов виртуальной машины в поле
+"Папка машины":</p>
+<p><img alt="" src="../media/1c31712ec568b8b23e6d9efe95bd347c.png" /></p>
+<p>После чего нажмите кнопку "Импорт".</p>
+<h1 id="_4"></h1>
+<h1 id="_5">Первичный запуск виртуальной машины</h1>
+<p>После успешного импорта образа появится новая строка виртуальной машины в списке
+доступных.</p>
+<blockquote>
+<p><em><strong>Важно!</strong> <br />
+Перед первым запуском необходимо сменить тип сетевого подключения виртуальной
+машины, в противном случае работа с ней из сети будет невозможна.</em></p>
+</blockquote>
+<p>Для изменения типа сетевого подключения выберите виртуальную машину и нажмите
+кнопку "Настроить":</p>
+<p><img alt="" src="../media/1597c440cf3adffd6a0d42bd99e202c0.png" /></p>
+<p>В появившемся диалоговом окне откройте раздел "Сеть", установите тип подключения
+"Сетевой мост" и нажмите "ОК":</p>
+<p><img alt="" src="../media/3f23d6a4353399208cf59c859e26442b.png" /></p>
+<p>Теперь запустите виртуальную машину. Для этого нажимаем кнопку "Запустить" в
+основном окне программы:</p>
+<p><img alt="" src="../media/2e1a87b976d40002f8b9bac8781c87ff.png" /></p>
+<p>После выполнения загрузки машины зайдите под учётной записью суперпользователя
+"root" с паролем "password".</p>
+<p>Подсказка по необходимым портам сервисов и учётной записи будет выведена на
+экран после загрузки системы.</p>
+<p><img alt="" src="../media/efcccfe3410804d40a2120aa744f9436.png" /></p>
+<h1 id="ip-">Настройка IP-адреса машины для работы с сервисами</h1>
+<h3 id="dhcp-">При наличии DHCP-сервера</h3>
+<p>Если Ваша сеть предусматривает наличие DHCP-сервера, то производить каких- либо
+настроек сети не нужно – IP-адрес будет назначен автоматически.</p>
+<p>Посмотреть адрес можно командой <strong>ip a</strong>.</p>
+<p>Находим интерфейс с именем <strong>eth0</strong>. В строке <strong>inet</strong> будет указан IP-адрес
+виртуальной машины, полученный от Вашего DHCP-сервера:</p>
+<p><img alt="" src="../media/cff18916b11ba2f2d2ee615f43fb743b.png" /></p>
+<p>Проверить доступность машины можно стандартной утилитой <em>ping</em> с другого
+компьютера, находящегося в том же сегменте сети, что и опрашиваемый хост:</p>
+<p><img alt="" src="../media/f34dc5570dbb04781cb24ad4dfc720df.png" /></p>
+<h3 id="dhcp-_1">При отсутствии DHCP-сервера</h3>
+<p>Если Ваша сеть не предусматривает автоматическую выдачу IP-адресов в виду
+отсутствия DHCP-сервера, то в этом случае необходимо назначить IP-адрес
+виртуальной машине вручную.</p>
+<p>Для этого требуется отредактировать файл <strong>ifcfg-eth0</strong>, находящийся в папке
+<strong>/etc/sysconfig/network-scripts</strong>, и файл <strong>network</strong>, размещённый в папке
+<strong>/etc/sysconfig</strong>.</p>
+<p>При редактировании файла конфигурации можно воспользоваться файловым менеджером
+<strong>Midnight Commander</strong>, он уже установлен и готов к использованию. Для запуска
+<strong>Midnight Commander</strong> достаточно набрать команду <em>mc</em>. После чего найти
+указанный конфигурационный файл, используя кнопки навигации и "Еnter". Файл
+<strong>ifcfg-eth0</strong> необходимо привести к следующему виду:</p>
+<ul>
+<li>
+<p>Изменить значение настройки <strong>BOOTPROTO</strong> на <strong>"static"</strong>.</p>
+</li>
+<li>
+<p>Изменить значение настройки <strong>IPADDR</strong> на IP-адрес виртуальной машины в
+    Вашей сети.</p>
+</li>
+<li>
+<p>Изменить значение настройки <strong>GATEWAY</strong> на шлюза из Вашей сети.</p>
+<p>Пример конфигурации, где <em>192.168.10.29</em> – IP-адрес виртуальной машины, а
+<em>192.168.10.1</em> – шлюз сети:</p>
+<p><em>IPADDR=192.168.10.29</em></p>
+<p><em>NETMASK=255.255.255.0</em></p>
+<p><em>GATEWAY=192.168.10.1</em></p>
+<p><em>DEFROUTE="yes"</em></p>
+<p><em>PEERROUTES="yes"</em></p>
+</li>
+</ul>
+<p><img alt="" src="../media/bbc277b6f3f3caaf77500a4e4218f5fe.png" /></p>
+<p>Сохраните выполненные изменения с помощью клавиши "F2". Для выхода из режима
+редактирования дважды нажмите клавишу "Escape".</p>
+<p>Далее необходимо отредактировать файл <strong>network</strong>, находящийся в папке
+<strong>/etc/sysconfig</strong>, добавив следующие строки:</p>
+<p><em>NETWORKING=yes</em></p>
+<p><em>HOSTNAME=platform</em></p>
+<p><em>GATEWAY=192.168.10.1</em></p>
+<p><img alt="" src="../media/55426ff72a3e424dd7d5df9a5598e16f.png" /></p>
+<p>Внесённые изменения сохраняем с помощью клавиши "F2" и выходим из режима
+редактирования, дважды нажав клавишу "Escape".</p>
+<p>Обратите внимание!</p>
+<p>Для того, чтобы изменения вступили в силу, необходимо ввести команду <strong>systemctl
+restart network</strong>. Для проверки работы сети Вашей виртуальной машины
+воспользуйтесь утилитой <em>ping</em>, указав адрес внешнего (при наличии доступа в
+интернет) или внутреннего хоста:</p>
+<p><img alt="" src="../media/81b187a0c8e009e712123a53bb2ff1a6.png" /></p>
+<h1 id="wdc_1">Запуск WDC.Платформы и доступ к сервисам</h1>
+<p>Для запуска всех необходимых сервисов достаточно запустить скрипт <strong>start.sh</strong>,
+находящийся в папке <strong>/opt/otp</strong>.</p>
+<p>Запуск можно осуществить с помощью менеджера <strong>Midnight Commander</strong>. Сначала
+запустите менеджер командой <strong>mc</strong>. Далее с помощью кнопок навигации зайдите в
+папку <strong>/opt/otp</strong> и запустите скрипт <strong>start.sh</strong> на выполнение клавишей
+"Enter" или наберите имя скрипта в консоли с указанием полного пути до него:
+<strong>opt/otp/start.sh</strong>.</p>
+<blockquote>
+<p><em><strong>Важно!</strong> <br />
+Сервис "Apache NiFi" запускается по истечении некоторого времени. Оно зависит
+от конфигурации сервера, на котором запущена виртуальная машина.</em></p>
+</blockquote>
+<p>Запуск сервисов заканчивается строкой: <em>Zeppelin start …[ OK ]</em>.</p>
+<p>Вход в основные сервисы осуществляется с помощью браузерам на любом компьютере,
+находящемся в том же сегменте сети, что и виртуальная машина с WDC.Платформой.</p>
+<h4 id="eva">Вход в EVA</h4>
+<p>Формат адреса для входа в <strong>EVA</strong>:</p>
+<p><strong>http://</strong><em>\&lt;IP адрес виртуальной машины></em></p>
+<p><strong>Пример</strong>.</p>
+<p>Вход в EVA выполняется по адресу http://192.168.10.29.</p>
+<p>Данные для входа (по умолчанию): имя пользователя – <strong>admin</strong>, пароль –
+<strong>12345678</strong>.</p>
+<p><img alt="" src="../media/fccabfa1bee1ef6ba085d1a4779e2ff5.png" /></p>
+<h4 id="apache-nifi">Вход в Apache NiFi</h4>
+<p>Формат адреса входа в <strong>Apache NiFi</strong>:</p>
+<p><strong>http://</strong><em>\&lt;IP адрес виртуальной машины:8080></em></p>
+<p><strong>Пример</strong>.</p>
+<p>Вход в Apache NiFi выполняется по адресу http://192.168.10.29:8080:</p>
+<p><img alt="" src="../media/b94a5b6c4d5df847bf3a9692d5674819.png" /></p>
+<h4 id="apache-spark">Вход в Apache Spark</h4>
+<p>Формат адреса для входа в <strong>Apache Spark</strong>:</p>
+<p><strong>http://</strong><em>\&lt;IP адрес виртуальной машины></em><strong>:9077</strong></p>
+<p><strong>Пример</strong>.</p>
+<p>Вход в Apache Spark выполняется по адресу http://192.168.10.29:9077:</p>
+<p><img alt="" src="../media/533d58bf25d8004957473a3ee01c463a.png" /></p>
+<h1 id="ssh">Подключение по SSH</h1>
+<p>Для удалённого подключения к виртуальной машине, можно использовать любой
+доступный клиент, поддерживающий SSH-подключения.</p>
+<p>Самым распространённым клиентом в этом случае является программа <strong>PuTTY</strong>.
+Скачать её можно с официального сайта из раздела "Download":
+<a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">https://www.chiark.greenend.org.uk/\~sgtatham/putty/latest.html</a></p>
+<p>После запуска программы в поле "Host Name (or IP address)" укажите IP-адрес
+виртуальной машины и нажмите кнопку "Open". Поле "Port" оставьте без изменений.</p>
+<p>Например, в поле "Host Name (or IP address)" вводим 192.168.10.29:</p>
+<p><img alt="" src="../media/a26140a2a939d4e276852fb282f42072.png" /></p>
+<p>В следующем окне о принятии сертификата нажмите кнопку "Accept". При успешном
+подключении на экран будет выведено предложение ввести учётные данные
+для доступа к виртуальной машине:</p>
+<p><img alt="" src="../media/eb7b59fdbeb366cb860c3c5b6e9764e5.png" /></p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            К началу
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Нижний колонтитул">
+      
+        
+        <a href="../../General_description/General_description/" class="md-footer__link md-footer__link--prev" aria-label="Назад: О WDC.Платформе" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Назад
+              </span>
+              О WDC.Платформе
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../Beginning/Beginning_of_work/" class="md-footer__link md-footer__link--next" aria-label="Вперед: Начало работы" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Вперед
+              </span>
+              Начало работы
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["header.autohide", "navigation.sections", "navigation.indexes", "navigation.top", "navigation.tabs"], "translations": {"clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "search.config.lang": "ru", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "\u041f\u043e\u0438\u0441\u043a", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version.title": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "search": "../../../assets/javascripts/workers/search.bd0b6b67.min.js", "version": {"default": "latest", "provider": "mike"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.467223ff.min.js"></script>
+      
+        <script src="../../../javascripts/extra.js"></script>
+      
+    
+  </body>
+</html>

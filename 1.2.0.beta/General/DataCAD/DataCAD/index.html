@@ -1,0 +1,1995 @@
+
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://example.com/1.2.0.beta/General/DataCAD/DataCAD/">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.5">
+    
+    
+      
+        <title>DataCAD - WDC.Платформа. Документация</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.2d9f7617.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-component="outdated" hidden>
+        <aside class="md-banner md-banner--warning">
+          
+            <div class="md-banner__inner md-grid md-typeset">
+              
+  Вы просматриваете не актуальную версию документации.
+  <a href="../../../.."> 
+    <strong>Нажмите здесь что бы переключится на актуальную.</strong>
+  </a>
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),outdated=__md_get("__outdated",sessionStorage);!0===outdated&&el&&(el.hidden=!1)</script>
+          
+        </aside>
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    <a href="../../.." title="WDC.Платформа. Документация" class="md-header__button md-logo" aria-label="WDC.Платформа. Документация" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            WDC.Платформа. Документация
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              DataCAD
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Поиск">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Очистить" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Вкладки" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../.." class="md-tabs__link">
+      WDC.Платформа
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../General_description/General_description/" class="md-tabs__link md-tabs__link--active">
+        Общие описания
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../OTL/OTL_commands/OTL_commands/" class="md-tabs__link">
+        Языки OTL и SMaLL
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../Optional/GrafanaPlugin/GrafanaPlugin/" class="md-tabs__link">
+        Компоненты WDC.Платформы
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../license/" class="md-tabs__link">
+      Лицензионное соглашение
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="https://t.me/WDCPlatform" class="md-tabs__link">
+      Остались вопросы?
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="WDC.Платформа. Документация" class="md-nav__button md-logo" aria-label="WDC.Платформа. Документация" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    WDC.Платформа. Документация
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        WDC.Платформа
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Общие описания
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Общие описания" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Общие описания
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../General_description/General_description/" class="md-nav__link">
+        О WDC.Платформе
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Installation/Install/" class="md-nav__link">
+        Установка
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Beginning/Beginning_of_work/" class="md-nav__link">
+        Начало работы
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../EVA/EVA/" class="md-nav__link">
+        EVA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          DataCAD
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        DataCAD
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание раздела">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание раздела
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#datacad" class="md-nav__link">
+    Введение в DataCAD
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    Начало работы
+  </a>
+  
+    <nav class="md-nav" aria-label="Начало работы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    Создание рабочего стола
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    Выполнение задач на рабочем столе
+  </a>
+  
+    <nav class="md-nav" aria-label="Выполнение задач на рабочем столе">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    Создание графа с использованием выражений
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#otl-" class="md-nav__link">
+    Создание графа с использованием OTL-запроса
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Языки OTL и SMaLL
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Языки OTL и SMaLL" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Языки OTL и SMaLL
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../OTL/OTL_commands/OTL_commands/" class="md-nav__link">
+        Команды языка OTL
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/SMaLL/" class="md-nav__link">
+        SMaLL
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../SMaLL/">Плагин MLCore</a>
+          
+            <label for="__nav_3_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Плагин MLCore" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Плагин MLCore
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/datasets/" class="md-nav__link">
+        Демонстрационные датасеты
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_3" type="checkbox" id="__nav_3_3_3" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_3">
+          Классификация
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Классификация" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Классификация
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/classification/logreg/" class="md-nav__link">
+        Логистическая регрессия
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/classification/decision_tree/" class="md-nav__link">
+        Решающее дерево
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/classification/rf/" class="md-nav__link">
+        Случайный лес
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/classification/gb/" class="md-nav__link">
+        Градиентный бустинг
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/classification/catboost/" class="md-nav__link">
+        CatBoost
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_4" type="checkbox" id="__nav_3_3_4" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_4">
+          Регрессия
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Регрессия" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Регрессия
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/regression/lr/" class="md-nav__link">
+        Линейная регрессия
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/regression/rf/" class="md-nav__link">
+        Случайный лес
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/regression/gb/" class="md-nav__link">
+        Градиентный бустинг
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/regression/catboost/" class="md-nav__link">
+        CatBoost
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_5" type="checkbox" id="__nav_3_3_5" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_5">
+          Кластеризация
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Кластеризация" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          Кластеризация
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/clustering/kmeans/" class="md-nav__link">
+        K-Means
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/clustering/dbscan/" class="md-nav__link">
+        DBSCAN
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_6" type="checkbox" id="__nav_3_3_6" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_6">
+          Временные ряды
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Временные ряды" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_6">
+          <span class="md-nav__icon md-icon"></span>
+          Временные ряды
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/ts/trend_detection/" class="md-nav__link">
+        Определение тренда
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/ts/predict/" class="md-nav__link">
+        Прогнозирование
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_7" type="checkbox" id="__nav_3_3_7" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_7">
+          Поиск аномалий
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Поиск аномалий" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_7">
+          <span class="md-nav__icon md-icon"></span>
+          Поиск аномалий
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/anomaly/lof/" class="md-nav__link">
+        Local Outlier Factor
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/anomaly/zscore/" class="md-nav__link">
+        Z-score
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/anomaly/iqr/" class="md-nav__link">
+        IQR
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/anomaly/mad/" class="md-nav__link">
+        MAD
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/anomaly/if/" class="md-nav__link">
+        Isolation Forest
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_8" type="checkbox" id="__nav_3_3_8" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_8">
+          Работа с признаками
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Работа с признаками" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_8">
+          <span class="md-nav__icon md-icon"></span>
+          Работа с признаками
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/features/pca/" class="md-nav__link">
+        PCA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_8_2" type="checkbox" id="__nav_3_3_8_2" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_8_2">
+          Заполнение пропусков
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Заполнение пропусков" data-md-level="4">
+        <label class="md-nav__title" for="__nav_3_3_8_2">
+          <span class="md-nav__icon md-icon"></span>
+          Заполнение пропусков
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/features/fillna/" class="md-nav__link">
+        Fill NA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/features/imputer/" class="md-nav__link">
+        Imputer
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/features/sample/" class="md-nav__link">
+        Сэмплирование
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/features/scaling/" class="md-nav__link">
+        Масштабирование (scaling)
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_9" type="checkbox" id="__nav_3_3_9" >
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_9">
+          Статистические функции
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Статистические функции" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_9">
+          <span class="md-nav__icon md-icon"></span>
+          Статистические функции
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/stats/correlation/" class="md-nav__link">
+        Корреляции Пирсона и Спирмена
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/BPM_Commands/" class="md-nav__link">
+        Плагин ВРМ
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/ExternalDataPlugin/" class="md-nav__link">
+        Плагин ExternalData
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/InstallingExtensions/" class="md-nav__link">
+        Установка расширений языка SMaLL
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Компоненты WDC.Платформы
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Компоненты WDC.Платформы" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Компоненты WDC.Платформы
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Optional/GrafanaPlugin/GrafanaPlugin/" class="md-nav__link">
+        Плагин для Grafana
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Optional/ConsoleQueryLauncher/ConsoleQueryLauncher/" class="md-nav__link">
+        Консольная утилита запуска запросов
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        Лицензионное соглашение
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://t.me/WDCPlatform" class="md-nav__link">
+        Остались вопросы?
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание раздела">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание раздела
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#datacad" class="md-nav__link">
+    Введение в DataCAD
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    Начало работы
+  </a>
+  
+    <nav class="md-nav" aria-label="Начало работы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    Создание рабочего стола
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    Выполнение задач на рабочем столе
+  </a>
+  
+    <nav class="md-nav" aria-label="Выполнение задач на рабочем столе">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    Создание графа с использованием выражений
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#otl-" class="md-nav__link">
+    Создание графа с использованием OTL-запроса
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h2 id="_1"></h2>
+<h1 id="datacad">Введение в DataCAD</h1>
+<p><strong>DataCAD</strong> – средство визуальной разработки веб-приложений, предназначенных для
+создания моделей в виде графов, с возможностью подключения к данным и их
+обработке на WDC.Платформе.</p>
+<p>DataCAD реализован в виде пользовательского одностраничного модульного
+веб-приложения с открытой архитектурой, т.е. имеется некоторый первичный набор
+плагинов, который может впоследствии расширяться.</p>
+<p>Система DataCAD является low-code платформой, доступной для работы
+бизнес-аналитиков и продвинутых пользователей.</p>
+<p>Работа в DataCAD делится на два этапа:</p>
+<ul>
+<li>
+<p>Пользователь создаёт Рабочий стол приложения – размещает модули интерфейса –
+    панели, настраивает связи между ними.</p>
+</li>
+<li>
+<p>Пользователь наполняет приложение рабочими моделями, содержащими графы,
+    расчёты и т.д.</p>
+</li>
+</ul>
+<p>Приложения сохраняются на уровне домашней страницы DataCAD:</p>
+<p><img alt="" src="../media/e5103357cb2fc6d98e4858bca05b13b8.png" /></p>
+<p><strong>Рабочий стол</strong> – рабочая область DataCAD, используемая в процессе разработки
+пользовательского приложения с расположенными на ней графическими компонентами:
+<em>панелями</em>.</p>
+<p><strong>Панель</strong> – визуальный компонент DataCAD, являющийся составным элементом
+рабочего стола, на котором ведётся разработка пользовательских <em>графов</em>.</p>
+<p><strong>Граф</strong> – совокупность <em>узлов</em> и связей между ними.</p>
+<p><strong>Примитив</strong> – элемент графа: <em>узел</em>, связь.</p>
+<p><strong>Узел</strong> – простейший элемент графа, примитив. Узел имеет название, набор
+входных и выходных <em>портов</em>, набор <em>свойств</em>. В DataCAD предусмотрены узлы
+нескольких типов. Они собраны в <em>библиотеке примитивов</em> для заимствования
+пользователем в процессе работы.</p>
+<p><strong>Свойство узла</strong> – настраиваемая характеристика узла, которое может содержать
+выражение или константу для расчета значения определенного типа.</p>
+<p><strong>Порт</strong> – именованный компонент внутри узла, который содержит:</p>
+<ul>
+<li>
+<p>имя, отражающее назначение порта – входной (inPort), выходной (outPort);</p>
+</li>
+<li>
+<p>значение, которое переносится по связи из другого узла (inPort) или
+    передаётся в другой узел (outPort).</p>
+</li>
+</ul>
+<p><strong>Полотно примитивов (LiveDashPanel)</strong> – панель, на которой пользователь создаёт
+граф с использованием <em>библиотеки примитивов</em>.</p>
+<p><strong>Библиотека примитивов</strong> – панель, содержащая образцы примитивов – узлов и
+связей, которые пользователь может разместить на полотне примитивов для
+построения графа. Примитивы объединены в тематические группы:</p>
+<ul>
+<li>
+<p>Связи.</p>
+</li>
+<li>
+<p>Элементы электрических схем.</p>
+</li>
+<li>
+<p>Логические узлы.</p>
+</li>
+<li>
+<p>Рисковые примитивы типа.</p>
+</li>
+</ul>
+<h1 id="_2">Начало работы</h1>
+<p>После запуска DataCAD открывается пустой <strong>рабочий стол</strong> – рабочая область, на
+которой можно располагать различные панели интерфейса.</p>
+<p><img alt="" src="../media/5e456d1ffc28eb635b45d3ae68a862ee.png" /></p>
+<p>Работа в DataCAD ведётся в два этапа:</p>
+<ul>
+<li>
+<p>Сначала Вы создаёте рабочий стол.</p>
+</li>
+<li>
+<p>Затем на созданном рабочем столе разрабатываете граф.</p>
+</li>
+</ul>
+<h2 id="_3">Создание рабочего стола</h2>
+<p>Нажмите на <img alt="" src="../media/46b28c496169c882db2373b01aea84c5.png" />.</p>
+<p>В появившемся окне укажите название рабочего стола и нажмите кнопку "Сохранить":</p>
+<p><img alt="" src="../media/25e17eb32e394b44edd86da36de0b131.png" /></p>
+<p>В результате на <strong>Домашнюю страницу</strong> DataCAD будет добавлен Ваш рабочий стол:</p>
+<p><img alt="" src="../media/c880e2e1163735f276ae34625170e8e6.png" /></p>
+<p>Открываем Ваш рабочий стол:</p>
+<p><img alt="" src="../media/a426849bb1200882bc25e37a94dd6553.png" /></p>
+<p>Пока он пуст.</p>
+<p>Сначала займёмся наполнением стола рабочими панелями. Нажмём последовательно на
+иконки <img alt="" src="../media/a0e26230f28bb06393b2324f206b65af.png" /> и
+<img alt="" src="../media/1fc73e9d9487951e67caa22fa62efb0b.png" />.</p>
+<p>В результате на панели DataCAD <strong>Настройка компонента</strong> появятся все настройки
+рабочего стола.</p>
+<p>Активируем переключатель <strong>Редактирование рабочего стола</strong>.</p>
+<p><img alt="" src="../media/3714111ea7d34f56627f859c58eaa6ff.png" /></p>
+<p>Далее перейдём к добавлению панелей на рабочий стол.</p>
+<p>Нам потребуются следующие панели:</p>
+<ul>
+<li>
+<p><strong>Панель полотна примитивов</strong> (LiveDashPanel) – панель, на которой будут
+    размещаться рабочие элементы.</p>
+</li>
+<li>
+<p><strong>Панель библиотеки примитивов</strong> – здесь в тематических группах размещены
+    образцы узлов и связей для построения графа.</p>
+</li>
+<li>
+<p><strong>Панель свойств примитивов</strong> (PrimitivePropertiesPanel) –
+    специализированная панель, предназначенная настройки свойств узла и портов.</p>
+</li>
+<li>
+<p><strong>Панель настройки событий и действий</strong> (EventSystemPanel) – панель, в
+    которой устанавливается связь между панелями Рабочего стола для передачи
+    данных. В нашей задаче – для передачи и отображения свойств элементов графа.</p>
+</li>
+</ul>
+<p>Откройте список панелей (меню <strong>Панели</strong>).</p>
+<p>Для добавления на Рабочий стол нужной панели следует выбрать её в списке,
+кликнуть на ней левой кнопкой "мыши", сдвинуть курсор вправо на маленькое окно и
+снова кликнуть в нём левой кнопкой "мыши":</p>
+<p><img alt="" src="../media/d124f4b669e3969aa98c1e838ad770ab.png" /></p>
+<p>На Рабочий стол будет добавлена панель:</p>
+<p><img alt="" src="../media/6afa897d9aa1a3ef93e0a85fbe4a1ee6.png" /></p>
+<p>Позиционируя курсор на контурах добавленных панелей и используя кнопку
+перемещения <img alt="" src="../media/7406decf9d0803e0af3023333b44e3ff.png" />, отредактируйте
+размер и местоположение панели на рабочем столе:</p>
+<p><img alt="" src="../media/86230d251e7f8dfe5a6d8559dfcb77e9.png" /></p>
+<p>Добавьте на Рабочий стол остальные панели и откорректируйте их при
+необходимости.</p>
+<p><img alt="" src="../media/bb05c7848fc765aa0acd4f63fcd6b188.png" /></p>
+<p>Отключите переключатель <strong>Редактирование рабочего стола</strong>.</p>
+<p>На рабочем столе отобразятся панели в режиме их непосредственного использования:</p>
+<p><img alt="" src="../media/7c9d891fb026cb9f59048402f75d2c08.png" /></p>
+<p>Каждый примитив имеет свойства. Свойства должны отображаться на Панели свойств
+примитивов <strong>PrimitivePropertiesPanel</strong>. Для этого необходимо установить связь
+между панелями.</p>
+<p>На панели <strong>EventSystemPanel</strong> (Панель системы событий и действий) нажимаем
+кнопку <strong>Добавить новую подписку</strong>.</p>
+<p>Заполняем поле <strong>Название показателя</strong>.</p>
+<p>В поле <strong>Панель</strong> группы <strong>События</strong> выбираем из списка строку:</p>
+<p><img alt="" src="../media/51fa0f80a938ff78de8fed43ac57f6b5.png" /></p>
+<p>В поле <strong>Событие панели</strong> группы <strong>События</strong> выбираем из списка строку:</p>
+<p><img alt="" src="../media/9eaaa7b76db9778e28c85556ff8bcfad.png" /></p>
+<p>Событие <strong>BroadcastPrimitiveInfo</strong> в дальнейшем обеспечит трансляцию на панель
+<strong>PrimitivePropertiesPanel</strong> свойств примитивов, размещённых на панели полотна
+примитивов.</p>
+<p>Далее заполняем группу полей <strong>Действия</strong>.</p>
+<p>Для поля <strong>Плагин</strong> выбираем значение:</p>
+<p><img alt="" src="../media/bce27741b387f9bf5ff7396923e6fa95.png" /></p>
+<p>Для поля <strong>Действие</strong> из списка выбираем строку:</p>
+<p><img alt="" src="../media/db1df72d82d331e010b0c53ec164c0a8.png" /></p>
+<p>Действие <strong>BroadcastPrimitiveInfo</strong> обеспечит на панели PrimitivePropertiesPanel
+отображение свойств примитивов, размещённых на панели полотна примитивов.</p>
+<p>Нажимаем кнопку <strong>Сохранить</strong>:</p>
+<p><img alt="" src="../media/e601b50bb8aafebe43c8fbb92d92dec9.png" /></p>
+<p>В результате в списке подписок появится новая активная подписка:</p>
+<p><img alt="" src="../media/8c1707a4b1a0e534ae2654b7ec759030.png" /></p>
+<p>В завершении первого этапа сохраним рабочий стол с помощью кнопки <strong>Сохранить</strong>
+на панели DataCAD <strong>Настройка компонента</strong>.</p>
+<p>Теперь перейдём к выполнению поставленной перед нами задачи – созданию графа.</p>
+<h2 id="_4">Выполнение задач на рабочем столе</h2>
+<h3 id="_5">Создание графа с использованием выражений</h3>
+<p>Перед нами стоит задача разработки графа.</p>
+<p><em>Граф состоит из трёх узлов. Два нижних узла связаны с верхним узлом. На нижних
+элементах отображаются числовые значения. На верхнем элементе выводится сумма
+этих чисел.</em></p>
+<p>В DataCAD такие элементы называются <strong>примитивами</strong>.</p>
+<p>На Панели библиотеки примитивов развернём группу "Рисковые примитивы" и
+перетащим нужные элементы на Панель полотна примитивов.</p>
+<p><strong>Важно!</strong></p>
+<p><em>При выборе примитивов следует обращать внимание на наличие у образцов входных,
+выходных портов, их количество и места размещения.</em></p>
+<p>Нам потребуются два примитива с один выходом
+<img alt="" src="../media/54a3bce9412268c6997e2584fe66edf0.png" /> и один примитив в двумя входами
+<img alt="" src="../media/6b0ddefd65d106efad6043b36e973370.png" />:</p>
+<p><img alt="" src="../media/7e8609a8f38670780323c292ac909af3.png" /></p>
+<p>Отредактируем их размер и местоположение. Для активации режима редактирования
+нужно кликнуть на примитиве, после чего он приобретёт следующий вид:</p>
+<p><img alt="" src="../media/f3a097c4bc7adf11aec24b52d85075a4.png" /></p>
+<p>Теперь между элементами графа нужно установить связи. На Панели библиотеки
+примитивов развернём группу "Связи" и перетащим нужные элементы на Панель
+полотна примитивов, соединив нижние примитивы с верхним:</p>
+<p><img alt="" src="../media/9518f956d29b225a2f7ddfcc6c068cc6.png" /></p>
+<p><strong>Важно!</strong></p>
+<p><em>Для перемещения всего графа нужно установить курсор в области размещения графа,
+нажать колёсико "мыши" и передвинуть граф в нужно место.</em></p>
+<p><em>Масштаб отображения графа на панели можно изменить, прокручивая колёсико "мыши"
+в нужном направлении.</em></p>
+<p>Каждый элемент графа имеет свойства. Свойства отображаются на Панели свойств
+примитивов <strong>PrimitivePropertiesPanel</strong>. В предыдущем разделе мы настроили связь
+между панелями, что обеспечило трансляцию на панель <strong>PrimitivePropertiesPanel</strong>
+свойств элементов графа.</p>
+<p>Теперь настроим свойства примитивов.</p>
+<p>При построении графа элементам присваиваются идентификаторы, они выводятся на
+элементах:</p>
+<p><img alt="" src="../media/58b813118bbd07c3770896c4cf440f06.png" /></p>
+<p>В дальнейшем они будут отображены на Панели свойств примитивов при
+позиционировании на элементе.</p>
+<p>Спозиционируем курсор на элементе графа. В Панели свойств примитива отобразится
+идентификатор примитива и введённый ранее текст на элементе.</p>
+<p><img alt="" src="../media/67203a5f580579a8d06da8c1cc007774.png" /></p>
+<p>Продолжим работу на вкладке <strong>Свойства</strong> этой панели.</p>
+<p>Нажмём на интерактивное поле <strong>Создать новое свойство</strong>. В поле <strong>Название</strong>
+укажем название свойства, используя латинские буквы и символы, и нажмём кнопку
+<strong>Добавить свойство</strong>.</p>
+<p><img alt="" src="../media/a582e38c771908da18b8dfc8cd2d585c.png" /></p>
+<p>Свойство будет добавлено ниже в список свойств:</p>
+<p><img alt="" src="../media/5c478704b9d033c89b6ab01d0dd6b4b5.png" /></p>
+<p>Открываем это свойство для редактирования, используя иконку
+<img alt="" src="../media/519e443ae86b869fa6f80c5a7bf41aac.png" />.</p>
+<p>Поле <strong>Тип запроса</strong> оставляем без изменений – <em>expression</em>.</p>
+<p>А в поле <strong>Запрос</strong> указываем число – <em>28</em>.</p>
+<p>И нажимаем кнопку <strong>Сохранить</strong>.</p>
+<p><img alt="" src="../media/c2e28aaed6c13a9554eed82e601f93f5.png" /></p>
+<p>Далее следует введённое свойство <strong>Sum1</strong> передать через порт в верхний элемент
+графа через порты. Для этого открываем вкладку <strong>Порты</strong>. Находим нужный
+выходной порт (в нашем случае он один) – <strong>outPort1</strong>. Открываем его на
+редактирование по кнопке <img alt="" src="../media/519e443ae86b869fa6f80c5a7bf41aac.png" />. И
+определяем свойство <strong>Sum1</strong>:</p>
+<ul>
+<li>
+<p>Поле <strong>Тип запроса</strong> оставляем без изменений – <em>expression</em>.</p>
+</li>
+<li>
+<p>В поле <strong>Запрос</strong> указываем – <em>this.Sum1</em>.</p>
+</li>
+<li>
+<p>Нажимаем кнопку <strong>Сохранить</strong>.</p>
+</li>
+</ul>
+<p><img alt="" src="../media/00dd2d363cc793a2c8597390a2540a4f.png" /></p>
+<p>После чего нажмём кнопку <img alt="" src="../media/c168257826b9c9f1feb7625ee13a20e4.png" /> на
+Панели полотна примитивов. И на Панели свойств примитивов появится заданное
+число:</p>
+<p><img alt="" src="../media/46215ad903b71b80b243b10f5bc15430.png" /></p>
+<p>А если кликнуть на верхнем элементе графа и открыть вкладку <strong>Порты</strong>, то для
+порта <strong>inPort2</strong> (порт, к которому была установлена связь от правого нижнего
+элемента) мы увидим переданное значение – <em>28</em>.</p>
+<p>Аналогичные действия проделаем для правого нижнего элемента, определив ему число
+<em>67</em>.</p>
+<p>В итоге для верхнего элементе графа на вкладке <strong>Порты</strong> мы увидим значения,
+переданные из нижних элементов:</p>
+<p><img alt="" src="../media/894cac2d42e75c206b4bb80f5889c797.png" /></p>
+<p>Для отображения на верхнем элементе суммы переданных чисел создадим свойство:</p>
+<p><img alt="" src="../media/afae817baac52dbd0ed2f32449cb113e.png" /></p>
+<p>После нажатия на Панели полотна примитивов кнопки
+<img alt="" src="../media/c168257826b9c9f1feb7625ee13a20e4.png" /> мы увидим, что для верхнего
+элемента на Панели свойств примитивов появилась сумма чисел из нижних элементов:</p>
+<p><img alt="" src="../media/5b876260c16fb688a046bb56c5e0fb62.png" /></p>
+<p>Теперь выведем числа и их сумму на элементы вместо отображённых по умолчанию
+идентификаторов.</p>
+<p>При двойном клике по примитиву на нём откроется интерактивная панель для ввода и
+форматирования текста. Последовательно для всех элементов введём текст и
+отформатируем его:</p>
+<ul>
+<li>
+<p>Левый нижний элемент – Число 1: <strong>\$Sum1\$</strong>.</p>
+</li>
+<li>
+<p>Правый нижний элемент – Число 2: <strong>\$Sum2\$</strong>.</p>
+</li>
+<li>
+<p>Верхний элемент – <strong>Итог: \$Sum3\$</strong>.</p>
+</li>
+</ul>
+<p>Получим требуемый граф:</p>
+<p><img alt="" src="../media/02d1633b3a6662a04c1f8cdd6b562545.png" /></p>
+<p>Сохраняем граф на сервере для последующего использования. Для этого на Панели
+полотна примитивов:</p>
+<ul>
+<li>
+<p>Введём имя файла графа – <em>Graph</em>.</p>
+</li>
+<li>
+<p>Нажмём кнопку <img alt="" src="../media/d218fc4f48e0e0e14b7c8d27b49ba699.png" />.</p>
+</li>
+</ul>
+<p><img alt="" src="../media/555e0f90ece31250471cb423c59c2559.png" /></p>
+<h3 id="otl-">Создание графа с использованием OTL-запроса</h3>
+<p>Есть очередная задача по разработке графа, которую нам нужно решить.</p>
+<p><em>Граф состоит из двух узлов. Нужно в нижнем узле выполнить otl-запрос и
+отобразить результат его выполнения на верхнем узле.</em></p>
+<p>Создадим новый граф – Graph4 из двух узлов.</p>
+<p><img alt="" src="../media/4ef757c44c03721d6e6ce9e43ab0f230.png" /></p>
+<p>Для нижнего узла добавим свойство с типом "OTL":</p>
+<ul>
+<li>
+<p>В поле <strong>Тип запроса</strong> установим значение – <em>OTL</em>.</p>
+</li>
+<li>
+<p>В поле <strong>Запрос</strong> пишем OTL-запрос: <em>| makeresults | eval t=18</em>.</p>
+</li>
+<li>
+<p>Нажимаем кнопку <strong>Сохранить</strong>.</p>
+</li>
+</ul>
+<p><img alt="" src="../media/ab5076ed023f65889fe39ea9f4bc112e.png" /></p>
+<p>Далее нажимаем кнопку <img alt="" src="../media/c168257826b9c9f1feb7625ee13a20e4.png" /> на Панели
+полотна примитивов. И на Панели свойств примитивов для свойства <strong>otl1</strong> во
+вкладке <strong>Свойства</strong> появится результат выполнения otl-запроса:</p>
+<p><img alt="" src="../media/7601d4570e07d80c5a0bd4e7c310a71c.png" /></p>
+<p>Теперь настроим вывод числа из otl-запроса. Для этого создаём новое свойство
+<strong>otl2</strong> с типом <em>expression</em>:</p>
+<ul>
+<li>
+<p>Поле <strong>Тип запроса</strong> оставляем без изменений – <em>expression</em>.</p>
+</li>
+<li>
+<p>В поле <strong>Запрос</strong> указываем – <em>this.otl1[0][`t`]</em>.</p>
+</li>
+<li>
+<p>Нажимаем кнопку <strong>Сохранить</strong>.</p>
+</li>
+</ul>
+<p>И наконец, выведем полученное число на верхний узел графа.</p>
+<p>Сначала передадим число в верхний узел через выходной порт нижнего узла.</p>
+<p>На Панели свойств примитивов для свойства <strong>otl1</strong> во вкладке <strong>Порты</strong> находим
+порт <strong>outPort1</strong>, жмём кнопку <img alt="" src="../media/519e443ae86b869fa6f80c5a7bf41aac.png" />:</p>
+<ul>
+<li>
+<p>Поле <strong>Тип запроса</strong> оставляем без изменений – <em>expression</em>.</p>
+</li>
+<li>
+<p>В поле <strong>Запрос</strong> указываем – <em>this.otl2</em>.</p>
+</li>
+<li>
+<p>Нажимаем кнопку <strong>Сохранить</strong>.</p>
+</li>
+</ul>
+<p><img alt="" src="../media/385ebb1fc565d12db7a386e05dcb253c.png" /></p>
+<p>Далее нажимаем кнопку <img alt="" src="../media/c168257826b9c9f1feb7625ee13a20e4.png" /> на Панели
+полотна примитивов. После чего на Панели свойств примитивов для порта
+<strong>outPort1</strong> нижнего узла появится нужное значение:</p>
+<p><img alt="" src="../media/d2ac3038ef74106d1162acc5e6db6c38.png" /></p>
+<p>Это значение будет передано во входной порт <strong>inPort1</strong> верхнего узла:</p>
+<p><img alt="" src="../media/fcfe8d585fd494b1915e608b006314ac.png" /></p>
+<p>Для отображения полученного числа кликнем дважды по верхнему узлу. На нём
+откроется интерактивная панель для ввода и форматирования текста. Введём текст и
+отформатируем его:</p>
+<p><img alt="" src="../media/acb0b606bd4b3ca030a43ea73ccc487f.png" /></p>
+<p>В результате получаем требуемый граф:</p>
+<p><img alt="" src="../media/6cde67dd69ecd3918541e2cbb447c430.png" /></p>
+<p>Сохраняем граф на сервере для последующего использования.</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            К началу
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Нижний колонтитул">
+      
+        
+        <a href="../../EVA/EVA/" class="md-footer__link md-footer__link--prev" aria-label="Назад: EVA" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Назад
+              </span>
+              EVA
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../../OTL/OTL_commands/OTL_commands/" class="md-footer__link md-footer__link--next" aria-label="Вперед: Команды языка OTL" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Вперед
+              </span>
+              Команды языка OTL
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["header.autohide", "navigation.sections", "navigation.indexes", "navigation.top", "navigation.tabs"], "translations": {"clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "search.config.lang": "ru", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "\u041f\u043e\u0438\u0441\u043a", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version.title": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "search": "../../../assets/javascripts/workers/search.bd0b6b67.min.js", "version": {"default": "latest", "provider": "mike"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.467223ff.min.js"></script>
+      
+        <script src="../../../javascripts/extra.js"></script>
+      
+    
+  </body>
+</html>

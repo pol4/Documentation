@@ -1,0 +1,3573 @@
+
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://example.com/1.0.0/General/Beginning/Beginning_of_work/">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.5">
+    
+    
+      
+        <title>Начало работы с WDC.Платформой - WDC.Платформа. Документация</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.2d9f7617.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-component="outdated" hidden>
+        <aside class="md-banner md-banner--warning">
+          
+            <div class="md-banner__inner md-grid md-typeset">
+              
+  Вы просматриваете не актуальную версию документации.
+  <a href="../../../.."> 
+    <strong>Нажмите здесь что бы переключится на актуальную.</strong>
+  </a>
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),outdated=__md_get("__outdated",sessionStorage);!0===outdated&&el&&(el.hidden=!1)</script>
+          
+        </aside>
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    <a href="../../.." title="WDC.Платформа. Документация" class="md-header__button md-logo" aria-label="WDC.Платформа. Документация" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            WDC.Платформа. Документация
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Начало работы с WDC.Платформой
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Поиск">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Очистить" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Вкладки" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../.." class="md-tabs__link">
+      WDC.Платформа
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../General_description/General_description/" class="md-tabs__link md-tabs__link--active">
+        Общие описания
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../OTL/OTL_commands/OTL_commands/" class="md-tabs__link">
+        Языки OTL и SMaLL
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../Optional/GrafanaPlugin/GrafanaPlugin/" class="md-tabs__link">
+        Компоненты WDC.Платформы
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="WDC.Платформа. Документация" class="md-nav__button md-logo" aria-label="WDC.Платформа. Документация" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    WDC.Платформа. Документация
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        WDC.Платформа
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Общие описания
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Общие описания" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Общие описания
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../General_description/General_description/" class="md-nav__link">
+        Общее описание WDC.Платформы
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Installation/Install/" class="md-nav__link">
+        Установка WDC.Платформы
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Начало работы с WDC.Платформой
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Начало работы с WDC.Платформой
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание раздела">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание раздела
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wdc" class="md-nav__link">
+    Введение в WDC.Платформу
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    Начало работы
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    Исследование данных
+  </a>
+  
+    <nav class="md-nav" aria-label="Исследование данных">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    Создание запроса к данным
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#otl" class="md-nav__link">
+    Базовые команды языка OTL для запросов
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    Конструирование дашбордов
+  </a>
+  
+    <nav class="md-nav" aria-label="Конструирование дашбордов">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    Панель инструментов дашборда
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    Создание дашборда
+  </a>
+  
+    <nav class="md-nav" aria-label="Создание дашборда">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    Создание источников данных
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    Размещение компонентов визуализации данных на дашборде
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    Наполнение компонента визуализации данными
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    Сохранение дашборда на сервере
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    Доработка источников данных
+  </a>
+  
+    <nav class="md-nav" aria-label="Доработка источников данных">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    Использование токенов в запросах
+  </a>
+  
+    <nav class="md-nav" aria-label="Использование токенов в запросах">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    Использование Кнопки для выполнения запросов
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    Использование Выпадающего списка
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    Использование Текстового блока
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    Использование Выбора времени
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    Использование токенов в названиях визуальных компонентов
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    Использование событий
+  </a>
+  
+    <nav class="md-nav" aria-label="Использование событий">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#onclick-set" class="md-nav__link">
+    Событие изменения свойства компонента (onclick … set)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onclickchangereport" class="md-nav__link">
+    Событие заполнения отчета (onclick...changeReport)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#svg-onclick-svg-go" class="md-nav__link">
+    Событие перехода с Svg на другой дашборд (onclick svg … go)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#heatmap-onclick-heatmap-go" class="md-nav__link">
+    Событие перехода с Heatmap на другой дашборд (onclick heatmap … go)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#map-onclick-map-go" class="md-nav__link">
+    Событие перехода с Map на другой дашборд (onclick map … go)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ontokencompareset" class="md-nav__link">
+    Событие сравнения значений токена (OnTokenCompare...set)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ondatacompareset" class="md-nav__link">
+    Событие сравнения данных Таблицы (OnDataCompare...set)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    Использование дашбордов
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    Экспорт и импорт дашбордов
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../EVA/EVA/" class="md-nav__link">
+        EVA
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Языки OTL и SMaLL
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Языки OTL и SMaLL" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Языки OTL и SMaLL
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../OTL/OTL_commands/OTL_commands/" class="md-nav__link">
+        Команды языка OTL
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/SMaLL/" class="md-nav__link">
+        SMaLL
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../SMaLL/">Плагин MLCore</a>
+          
+            <label for="__nav_3_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Плагин MLCore" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Плагин MLCore
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/datasets/" class="md-nav__link">
+        Демонстрационные датасеты
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_3" type="checkbox" id="__nav_3_3_3" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_3">
+          Классификация
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Классификация" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Классификация
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/classification/logreg/" class="md-nav__link">
+        Логистическая регрессия
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/classification/decision_tree/" class="md-nav__link">
+        Решающее дерево
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/classification/rf/" class="md-nav__link">
+        Случайный лес
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/classification/gb/" class="md-nav__link">
+        Градиентный бустинг
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/classification/catboost/" class="md-nav__link">
+        CatBoost
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_4" type="checkbox" id="__nav_3_3_4" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_4">
+          Регрессия
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Регрессия" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Регрессия
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/regression/lr/" class="md-nav__link">
+        Линейная регрессия
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/regression/rf/" class="md-nav__link">
+        Случайный лес
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/regression/gb/" class="md-nav__link">
+        Градиентный бустинг
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/regression/catboost/" class="md-nav__link">
+        CatBoost
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_5" type="checkbox" id="__nav_3_3_5" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_5">
+          Кластеризация
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Кластеризация" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          Кластеризация
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/clustering/kmeans/" class="md-nav__link">
+        K-Means
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/clustering/dbscan/" class="md-nav__link">
+        DBSCAN
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_6" type="checkbox" id="__nav_3_3_6" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_6">
+          Временные ряды
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Временные ряды" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_6">
+          <span class="md-nav__icon md-icon"></span>
+          Временные ряды
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/ts/trend_detection/" class="md-nav__link">
+        Определение тренда
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/ts/predict/" class="md-nav__link">
+        Прогнозирование
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_7" type="checkbox" id="__nav_3_3_7" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_7">
+          Поиск аномалий
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Поиск аномалий" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_7">
+          <span class="md-nav__icon md-icon"></span>
+          Поиск аномалий
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/anomaly/lof/" class="md-nav__link">
+        Local Outlier Factor
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/anomaly/zscore/" class="md-nav__link">
+        Z-score
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/anomaly/iqr/" class="md-nav__link">
+        IQR
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/anomaly/mad/" class="md-nav__link">
+        MAD
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/anomaly/if/" class="md-nav__link">
+        Isolation Forest
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_8" type="checkbox" id="__nav_3_3_8" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_8">
+          Работа с признаками
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Работа с признаками" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_8">
+          <span class="md-nav__icon md-icon"></span>
+          Работа с признаками
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/features/pca/" class="md-nav__link">
+        PCA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_8_2" type="checkbox" id="__nav_3_3_8_2" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_8_2">
+          Заполнение пропусков
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Заполнение пропусков" data-md-level="4">
+        <label class="md-nav__title" for="__nav_3_3_8_2">
+          <span class="md-nav__icon md-icon"></span>
+          Заполнение пропусков
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/features/fillna/" class="md-nav__link">
+        Fill NA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/features/imputer/" class="md-nav__link">
+        Imputer
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/features/sample/" class="md-nav__link">
+        Сэмплирование
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/features/scaling/" class="md-nav__link">
+        Масштабирование (scaling)
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_9" type="checkbox" id="__nav_3_3_9" >
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_9">
+          Статистические функции
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Статистические функции" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_9">
+          <span class="md-nav__icon md-icon"></span>
+          Статистические функции
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/stats/correlation/" class="md-nav__link">
+        Корреляции Пирсона и Спирмена
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/BPM_Commands/" class="md-nav__link">
+        Плагин ВРМ
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SMaLL/InstallingExtensions/" class="md-nav__link">
+        Установка расширений языка SMaLL
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Компоненты WDC.Платформы
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Компоненты WDC.Платформы" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Компоненты WDC.Платформы
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Optional/GrafanaPlugin/GrafanaPlugin/" class="md-nav__link">
+        Плагин для Grafana
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Optional/ConsoleQueryLauncher/ConsoleQueryLauncher/" class="md-nav__link">
+        Консольная утилита запуска запросов
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание раздела">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание раздела
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wdc" class="md-nav__link">
+    Введение в WDC.Платформу
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    Начало работы
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    Исследование данных
+  </a>
+  
+    <nav class="md-nav" aria-label="Исследование данных">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    Создание запроса к данным
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#otl" class="md-nav__link">
+    Базовые команды языка OTL для запросов
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    Конструирование дашбордов
+  </a>
+  
+    <nav class="md-nav" aria-label="Конструирование дашбордов">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    Панель инструментов дашборда
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    Создание дашборда
+  </a>
+  
+    <nav class="md-nav" aria-label="Создание дашборда">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    Создание источников данных
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    Размещение компонентов визуализации данных на дашборде
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    Наполнение компонента визуализации данными
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    Сохранение дашборда на сервере
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    Доработка источников данных
+  </a>
+  
+    <nav class="md-nav" aria-label="Доработка источников данных">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    Использование токенов в запросах
+  </a>
+  
+    <nav class="md-nav" aria-label="Использование токенов в запросах">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    Использование Кнопки для выполнения запросов
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    Использование Выпадающего списка
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    Использование Текстового блока
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    Использование Выбора времени
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    Использование токенов в названиях визуальных компонентов
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    Использование событий
+  </a>
+  
+    <nav class="md-nav" aria-label="Использование событий">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#onclick-set" class="md-nav__link">
+    Событие изменения свойства компонента (onclick … set)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onclickchangereport" class="md-nav__link">
+    Событие заполнения отчета (onclick...changeReport)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#svg-onclick-svg-go" class="md-nav__link">
+    Событие перехода с Svg на другой дашборд (onclick svg … go)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#heatmap-onclick-heatmap-go" class="md-nav__link">
+    Событие перехода с Heatmap на другой дашборд (onclick heatmap … go)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#map-onclick-map-go" class="md-nav__link">
+    Событие перехода с Map на другой дашборд (onclick map … go)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ontokencompareset" class="md-nav__link">
+    Событие сравнения значений токена (OnTokenCompare...set)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ondatacompareset" class="md-nav__link">
+    Событие сравнения данных Таблицы (OnDataCompare...set)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    Использование дашбордов
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    Экспорт и импорт дашбордов
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h2 id="_1"></h2>
+<h1 id="wdc">Введение в WDC.Платформу</h1>
+<p><strong>WDC.Платформа –</strong> универсальная система сбора, аналитики и визуализации
+больших объемов машинных данных (machine-generated data), построенная на базе
+стека программных продуктов с открытым исходным кодом и компонентов собственной
+разработки. Разработчик WDC.Платформы – российская компания ISG Neuro, входящая
+в группу компаний Открытые Технологии.</p>
+<p>Ключевой особенностью WDC.Платформы является минимальный барьер входа для
+пользователей системы, что обеспечивает возможность использования самых
+современных технологий машинного обучения, аналитики больших данных и
+распределенной обработки информации с минимальными затратами на изучение этих
+технологий.</p>
+<p><strong>EVA</strong> – это web-интерфейс WDC.Платформы, предназначенный для визуализации
+результатов обработки большого объема данных (Big Data) и настройки логики
+взаимодействия между отдельными компонентами визуализации данных.</p>
+<p>Работа ведётся на интерактивной информационно-аналитической панели – <em>дашборде</em>.</p>
+<p><strong>Дашборд</strong> – совокупность интерактивных компонентов визуализации данных и
+логики взаимодействия между ними.</p>
+<p>Данные на дашборд загружаются на основе подготовленных пользователем запросов –
+<em>источников данных</em>.</p>
+<p><strong>Источник данных</strong>  – сформированный пользователем запрос к данным, визуальное
+представление которых он хочет получить на дашборде. Запрос создаётся
+пользователем на высокоуровневом языке OTL (см. Руководство пользователя
+“Команды языка OTL”).</p>
+<p>Данные, выбранные с помощью источников данных, отображаются в <em>визуализациях</em>.</p>
+<p><strong>Визуализации</strong> – интерактивные компоненты визуализации данных различных типов,
+размещённые на дашборде.</p>
+<p><strong>EVA</strong> поддерживает компоненты двух типов:</p>
+<ul>
+<li>
+<p>Компоненты отображения данных:</p>
+<ul>
+<li>
+<p><strong>Таблица</strong></p>
+</li>
+<li>
+<p><strong>Мультилинейный график</strong></p>
+</li>
+<li>
+<p><strong>Карта</strong></p>
+</li>
+<li>
+<p><strong>Круговая диаграмма</strong></p>
+</li>
+<li>
+<p><strong>Граф</strong></p>
+</li>
+<li>
+<p><strong>Кустовая схема</strong></p>
+</li>
+<li>
+<p><strong>Диаграмма Гантта</strong></p>
+</li>
+<li>
+<p><strong>Плитка</strong></p>
+</li>
+<li>
+<p><strong>Изображение</strong></p>
+</li>
+<li>
+<p><strong>Число</strong></p>
+</li>
+<li>
+<p><strong>Граф_old</strong></p>
+</li>
+<li>
+<p><strong>Тепловая карта</strong></p>
+</li>
+<li>
+<p><strong>Single Value</strong></p>
+</li>
+<li>
+<p><strong>Ползунок</strong></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Компоненты, реализующие логику взаимодействия между пользователем и
+    компонентами отображения данных:</p>
+<ul>
+<li>
+<p><strong>Выпадающий список</strong></p>
+</li>
+<li>
+<p><strong>Выбор времени</strong></p>
+</li>
+<li>
+<p><strong>Кнопка</strong></p>
+</li>
+<li>
+<p><strong>Текстовый блок</strong></p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Токен</strong> – внутренняя переменная для дашборда, значение которой присваивается в
+зависимости от действий пользователя.</p>
+<p>Токены используются:</p>
+<ul>
+<li>
+<p>в источниках данных – для фильтрации данных, передаваемых на дашборд, и
+    получения таким образом в интерактивных компонентах новых данных;</p>
+</li>
+<li>
+<p>в событиях – как для модификации отображения данных в интерактивных
+    компонентах, так и для модификации свойств самих интерактивных компонентов.</p>
+</li>
+</ul>
+<p><strong>Событие</strong> – логика взаимодействия между компонентами визуализации данных,
+реализуемая в ответ на действие пользователя.</p>
+<p><strong>Место EVA в общей схеме компонентов WDC.Платформы</strong></p>
+<p><img alt="" src="../media/172569373c3bd25ba414b19b1a07ba74.png" /></p>
+<p>WDC.Платформа является универсальной системой сбора, аналитики и визуализации
+больших объемов машинных данных (machine-generated data).</p>
+<p>В её состав входит ряд компонентов, специализирующихся на выполнении
+определённых функций:</p>
+<ul>
+<li>
+<p><em>Извлечение-Преобразование-Загрузка.</em></p>
+<p><em>Apache Nifi</em></p>
+<p>В систему поступают разноформатные данные. С помощью Apache Nifi они
+обрабатываются, приобретают единую структуру и получают необходимые атрибуты
+для дальнейшего использования.</p>
+</li>
+<li>
+<p><em>Хранилище данных.</em></p>
+<p><em>GlusterFS</em></p>
+<p>Первоначально обработанные данные поступают в хранилище GlusterFS.
+Информация размещена в распределенном и реплицированном виде для обеспечения
+надежного хранения и отказоустойчивости системы:</p>
+</li>
+<li>
+<p>индексированные данные – <strong>индексы</strong>;</p>
+</li>
+<li>
+<p>оперативные данные для быстрого доступа – <strong>кэш</strong>; оперативные данные за
+    время, заданное в <em>EVA</em>, и результаты поисковых запросов.</p>
+</li>
+<li>
+<p><em>Обработка данных.</em></p>
+<p><em>Apache Spark</em></p>
+<p>Приложение <em>Apache Spark</em> выполняет параллельную обработку данных на
+основании полученных из <em>Базы данных</em> поисковых запросов и выгружает
+запрошенные данные в кэш Хранилища данных.</p>
+</li>
+<li>
+<p><em>База данных.</em></p>
+<p><em>PostgreSQL</em></p>
+<p>База данных обеспечивает обмен служебными сообщениями между приложениями
+<em>Apache Spark</em> и <em>OT-Rest</em>, проводит аудит поисковых запросов и хранит всю
+информацию об инструментах визуализации приложения <em>EVA</em>.</p>
+</li>
+<li>
+<p><em>Взаимодействие пользовательского интерфейса и серверной части</em></p>
+<p><em>ОТ.REST</em></p>
+<p><em>ОТ.REST</em> осуществляет предварительную обработку поисковых запросов и
+передаёт их на дальнейшую обработку в приложение <em>Apache Spark</em>. Данные,
+подготовленные по запросам, перемещает из Хранилища в <em>EVA</em> для
+визуализации.</p>
+</li>
+<li>
+<p><em>Визуализация данных.</em></p>
+<p><em>EVA</em></p>
+<p>Интерактивная среда разработки <em>EVA</em> позволяет разрабатывать и выполнять
+запросы к различным источникам данных, обрабатывать и визуализировать
+данные.</p>
+<p>EVA создаёт <em>Локальное хранилище</em> на компьютере пользователя для
+оперативного хранения используемых им инструментов EVA (дашбордов и проч.).</p>
+</li>
+</ul>
+<p><strong>Функциональные модули EVA</strong></p>
+<p>В EVA могут быть предоставлены для работы следующие модули:</p>
+<ul>
+<li>
+<p><strong>Конструирование дашбордов</strong> – инструмент предназначен для разработки и
+    использования сложных интерактивных дашбордов, позволяющих визуализировать
+    данные в различных форматах представления.</p>
+</li>
+<li>
+<p><strong>Исследование данных</strong> – инструмент для отладки запросов к данным. С его
+    помощью Вы можете создавать запросы, отлаживать их и визуализировать
+    результаты выполнения в различных интерактивных компонентах.</p>
+</li>
+</ul>
+<p>С подробным описанием всех модулей EVA, технологии работы ними, а также экранных
+форм модуля “Конструирование дашбордов” с детальным описанием полей и набора
+поддерживаемой функциональности Вы можете ознакомиться в Руководстве
+пользователя “EVA”.</p>
+<h1 id="_2">Начало работы</h1>
+<p>Перед тем, как приступить к работе в EVA, убедитесь, что:</p>
+<ul>
+<li>
+<p>Данные для Вашей работы загружены в Хранилище данных.</p>
+</li>
+<li>
+<p>Вам предоставлен доступ к EVA.</p>
+</li>
+</ul>
+<p>После входа в EVA на Главной странице Вы увидите Главную панель
+<img alt="" src="../media/7426d9b146ac457a12198ab414e5305e.png" />:</p>
+<p><img alt="" src="../media/d8a3d14621811c2ab01ea5e03d597270.png" /></p>
+<p>Справа по клику на иконку справа откроется меню “Профиль”:</p>
+<p><img alt="" src="../media/f188dbae13a579835ef45e736158eaec.png" /></p>
+<p>Рассмотрим инструменты подробнее:</p>
+<ul>
+<li>
+<p><strong><img alt="" src="../media/eaf37fcad6533372b92f322f9db00f9a.png" /></strong> – режим управления
+    доступом пользователей:</p>
+<ul>
+<li>
+<p>пользователь с привилегией <strong>admin_all</strong> имеет права на выполнение этого
+    действия для всех пользователей EVA;</p>
+</li>
+<li>
+<p>пользователь с другим уровнем доступа может просматривать информацию о
+    предоставленных ему правах и редактировать свой пароль.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><img alt="" src="../media/ef59fc51d8b4ca795075b7aef044a4d7.png" /> – режим выбора имеющейся
+    темы оформления EVA, а также создания новой темы, её редактирования и
+    удаления.</p>
+<p><img alt="" src="../media/a62f0118dcf040926811bc0f2a669a41.png" /> – после нажатия на эту
+иконку на экране появится окно, предназначенное для настройки своей темы.
+Под полем <strong>Название темы</strong> находится краткое Руководство, в котором
+приведён перечень настраиваемых элементов приложения и какие поля окна
+управляют их цветовым оформлением.</p>
+<p>Созданную Вами тему в дальнейшем можно редактировать и удалить.</p>
+<p><img alt="" src="../media/2a7ec2a610ba7f58a51c6e29fe5beaa0.png" /></p>
+</li>
+<li>
+<p><strong><img alt="" src="../media/a30bcd46f36ae40c3550d49802b5dce3.png" /></strong> – выход из программы и
+    предоставление возможности вернуться, например, под другим идентификатором
+    пользователя.</p>
+</li>
+</ul>
+<p>В настоящем Руководстве будут рассмотрены следующие модули:</p>
+<ul>
+<li>
+<p><strong>Конструирование дашбордов</strong> – инструмент для создания и использования
+    сложных интерактивных дашбордов, позволяющих визуализировать данные в
+    различных форматах представления.</p>
+</li>
+<li>
+<p><strong>Исследование данных</strong> – инструмент для отладки запросов к данным. С его
+    помощью Вы можете создавать запросы, отлаживать их и визуализировать
+    результаты выполнения в различных интерактивных компонентах.</p>
+</li>
+</ul>
+<p>Кроме того, обратите внимание на информационную составляющую – система выводит
+на заголовок вкладки браузера названия модулей и дашбордов, с которыми Вы
+работаете, а также сохраняет ссылки на них в истории браузера.</p>
+<p>А теперь начнём знакомство с модуля EVA “Исследование данных”.</p>
+<h1 id="_3"></h1>
+<h1 id="_4">Исследование данных</h1>
+<p>Рассмотрим функциональные возможности модуля "Исследование данных" подробнее.</p>
+<p><img alt="" src="media/e1d977f9e949f014b8adb8c91926dff9.png" /></p>
+<p>Область поиска данных предназначена для ввода запроса к данным и выполнении по
+запросу поиска данных за фиксированный период времени.</p>
+<p>Период времени можно задать в раскрывающемся списке, расположенном слева от
+кнопки "Поиск". По умолчанию определён период "За всё время".</p>
+<p>Окно поиска, предназначенное для формирования запроса, можно настроить. Для
+этого под окном поиска размещён раскрывающийся список "Настройки поиска", в
+котором задаются:</p>
+<ul>
+<li>
+<p>автоматический перенос вводимого текста запроса на следующую строку при
+    активном переключателе "Автоперенос на новую строку";</p>
+</li>
+<li>
+<p>количество строк, видимых в окне.</p>
+<p>Для формирования запроса используется высокоуровневый язык OTL. Все команды
+– подробное описание, синтаксис и примеры использования в запросах –
+представлены в Руководстве "Команды языка OTL".</p>
+<p>Ниже мы остановимся только на базовом наборе команд и разберём пошагово
+процедуру создания запросов с их использованием.</p>
+<p>Подготовленный запрос запускается на выполнение по кнопке "Поиск" или
+сочетанию клавиш [Ctrl+Enter].</p>
+<p>Имеется возможность вывести для работы в окно поиска ранее введённые
+запросы, для этого следует воспользоваться кнопкой "Шаг назад" необходимое
+количество раз, для возврата к более новым запросам используется кнопка "Шаг
+вперёд".</p>
+<p>Для удаления запроса и отображённых данных используется кнопка "Сбросить".</p>
+</li>
+</ul>
+<p>Область просмотра результата выполнения поиска. В ней активна следующая
+функциональность:</p>
+<ul>
+<li>
+<p><strong>События</strong> – просмотр результатов выполнения поиска:</p>
+<ul>
+<li>
+<p>поля данных, участвующих в запросе – перечень идентификаторов с
+    указанием их типов выводятся слева автоматически после выполнения
+    запроса;</p>
+</li>
+<li>
+<p>значения поля данных, количество и процент их повторений – эта
+    информация выводится по полю, выбранному с помощью "мыши".</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Статистика</strong> – данные выводятся в табличном виде.</p>
+</li>
+<li>
+<p><strong>Визуализация</strong> – здесь можно изменить представление полученных данных,
+    кликнув на иконку с нужным для работы интерактивным компонентом. После чего
+    результаты будут интерпретированы в выбранный Вами формат визуализации
+    данных.</p>
+</li>
+<li>
+<p><strong>Отчет</strong> – формирование отчёта.</p>
+</li>
+<li>
+<p><strong>Скачать</strong> – скачивание сформированного отчёта в предпочтительном формате –
+    <strong>xlsx</strong> или <strong>csv</strong>.</p>
+</li>
+</ul>
+<p>Настройки для запроса заданы по умолчанию. Просмотреть и изменить их можно по
+копке <img alt="" src="../media/31b10f4a17915ee43949eb95983487c8.png" />. Среди настроек доступны
+универсальные настройки (основные и дополнительные) и уникальные настройки,
+используемые для интерактивных компонентов конкретных видов.</p>
+<h2 id="_5">Создание запроса к данным</h2>
+<p>Запрос состоит из серии команд.</p>
+<p>Команды пишутся последовательно и отделяются друг от друга конвейером (|).</p>
+<p><strong>Примечание.</strong></p>
+<p><em>По горячей клавише</em> <strong>Ctrl+\</strong> <em>текст, начинающийся с "|", будет перенесён на
+новую строку.</em></p>
+<p>Данные, полученные при выполнении команды, являются исходными данными для
+следующей команды.</p>
+<p>Для начала достаточно загрузить весь набор данных, с которыми Вы будете
+работать. Для этого в запросе используйте команду загрузки данных с указанием в
+запросе индекс-папки с нужными данными.</p>
+<p>| otstats ...</p>
+<p>Данные будут загружены в EVA и отобразятся в нижней области в виде таблицы, т.к.
+этот компонент визуализации настроен для отображения по умолчанию.</p>
+<p>Далее Вы, уточняя условия вывода данных, последовательно, команда за командой,
+создаёте запрос, запускаете его на выполнение с помощью кнопки
+<img alt="" src="../media/2b9ea74df1136772cb15c54c5f0aede6.png" /> и оперативно получаете
+промежуточные результаты.</p>
+<p>В процессе выполнения запроса могут возникнуть проблемы. В этом случае процесс
+будет остановлен, и подсветится иконка лог-журнала
+<img alt="" src="../media/9a87bc9fc1abec9640bba80a5f427fa4.png" /><strong>,</strong> расположенная справа в
+Основной панели EVA. В лог-журнале Вам будет доступна для просмотра вся
+последовательность действий, выполняемых системой по запросу.</p>
+<p>Ниже остановимся подробнее на базовых командах языка OTL, позволяющих создавать
+простые запросы к данным.</p>
+<h2 id="otl">Базовые команды языка OTL для запросов</h2>
+<p>Команды языка OTL, которые достаточно освоить на начальном этапе разработки
+запросов:</p>
+<table>
+<thead>
+<tr>
+<th><strong>otstats</strong></th>
+<th>Загружает данные из индекса.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>eval</strong></td>
+<td>Создаёт новое поле и заполняет его вычисленными значениями.</td>
+</tr>
+<tr>
+<td><strong>fields</strong></td>
+<td>Отображает только указанные поля. Синоним команды <strong>table</strong>.</td>
+</tr>
+<tr>
+<td><strong>head</strong></td>
+<td>Отображает заданное количество первых записей запроса.</td>
+</tr>
+<tr>
+<td><strong>rename</strong></td>
+<td>Переименовывает одно или несколько полей.</td>
+</tr>
+<tr>
+<td><strong>search</strong></td>
+<td>Выполняет поиск и фильтрацию данных.</td>
+</tr>
+<tr>
+<td><strong>sort</strong></td>
+<td>Сортирует данные по одному или нескольким полям.</td>
+</tr>
+<tr>
+<td><strong>stats</strong></td>
+<td>Применяет агрегирующую функцию к полю.</td>
+</tr>
+<tr>
+<td><strong>table</strong></td>
+<td>Отображает только указанные поля. Синоним команды <strong>fields</strong>.</td>
+</tr>
+<tr>
+<td><strong>timechart</strong></td>
+<td>Агрегирует результаты по времени.</td>
+</tr>
+<tr>
+<td><strong>where</strong></td>
+<td>Отфильтровывает записи согласно заданным условиям.</td>
+</tr>
+</tbody>
+</table>
+<p>Рассмотрим их подробнее на примерах.</p>
+<p><strong>Пример 1</strong></p>
+<p>Исходные данные:</p>
+<p>Имеются данные о работе устройств в установках нефтеперерабатывающего завода.</p>
+<p>Исходные данные размещены в индексе <em>devices_d</em>.</p>
+<p>Запрос:</p>
+<p>Подготовить данные о работе насоса марки "н-102" с метрикой "We": определить 5
+дней, в которые для него зафиксировано максимальное число выходов показателя
+виброускорения на подшипнике maxval за допустимый предел tpm_max, и разместить
+эти записи в порядке убывания числа выходов.</p>
+<p>| otstats index=devices_d</p>
+<p>| rename signes as metric</p>
+<p>| search device="н-102" AND metric="We"</p>
+<p>| fields _time, maxval, tpm_max, device, metric</p>
+<p>| eval isAlert = if(maxval > tpm_max, 1, 0)</p>
+<p>| timechart span=1d sum(isAlert) as alert_number</p>
+<p>| sort -alert_number</p>
+<p>| eval time = strftime(_time, "%Y-%m-%d")</p>
+<p>| table time, alert_number</p>
+<p>| head 5</p>
+<p>Расшифровка запроса построчно:</p>
+<table>
+<thead>
+<tr>
+<th>1.</th>
+<th>Загрузить данные из индекса devices_d:</th>
+<th><strong>otstats</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>| otstats index=devices_d</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>2.</th>
+<th>Переименовать поле signes в более понятное metric:</th>
+<th><strong>rename</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>| rename signes as metric</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>3.</th>
+<th>Найти насосы марки "н-102" и метрикой "We":</th>
+<th><strong>search</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>| search device="н-102" AND metric="We"</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>4.</th>
+<th>Выбрать поля для использования в запросе:</th>
+<th><strong>fields</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>| fields _time, maxval, tpm_max, device, metric</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>5.</th>
+<th>Создать новое поле isAlert и поместить в него "1", если для насоса показатель виброускорения maxval вышел за допустимый предел tpm_max , и "0", если – нет:</th>
+<th><strong>eval</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>| eval isAlert = if(maxval > tpm_max, 1, 0)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>6.</th>
+<th>Подсчитать количество выходов показателя за допустимый предел по суткам (сумма значений в поле isAlert) и полученный результат поместить в поле alert_number:</th>
+<th><strong>timechart</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>| timechart span=1d sum(isAlert) as alert_number</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>7.</th>
+<th>Отсортировать результаты по полю alert_number в порядке убывания:</th>
+<th><strong>sort</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>| sort -alert_number</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>8.</th>
+<th>Преобразовать значения поля _time в формат "%Y-%m-%d" и записать его в поле time:</th>
+<th><strong>eval</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>| eval time = strftime(_time, "%Y-%m-%d")</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>9.</th>
+<th>Отобрать дату time и количество выходов показателя за допустимый предел alert_number в указанный период:</th>
+<th><strong>table</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>| table time, alert_number</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>10.</th>
+<th>Отобразить 5 первых записей (т.е. записей с наибольшим превышением допустимого показателя в указанную дату):</th>
+<th><strong>head</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>| head 5</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Пример 2</strong></p>
+<p>Исходные данные:</p>
+<p>Те же.</p>
+<p>Запрос:</p>
+<p>Отобразить максимальное значение показателя виброускорения на подшипнике maxval
+метрики signes "We" отдельно по каждому устройству device.</p>
+<p>| otstats index=devices_d</p>
+<p>| where signes="We"</p>
+<p>| stats max(maxval) as max_value by device</p>
+<p>Расшифровка запроса построчно:</p>
+<table>
+<thead>
+<tr>
+<th>1.</th>
+<th>Загрузить данные из индекса devices_d:</th>
+<th><strong>otstats</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>| otstats index=devices_d</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>2.</th>
+<th>Отобрать записи с метрикой "We":</th>
+<th><strong>where</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>| where signes="We"</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>3.</th>
+<th>Вывести максимальное значение показателя maxval в поле max_value для каждого типа устройств device:</th>
+<th><strong>stats</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>| stats max(maxval) as max_value by device</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Итак, мы познакомили Вас с базовыми командами языка OTL и дали подробную
+инструкцию по их использованию при составлении запросов.</p>
+<p>Дальнейшее изучение команд языка Вы можете продолжить самостоятельно в
+Руководстве "Команды языка OTL", где представлен весь набор применяемых команд,
+их подробное описание и примеры использования.</p>
+<h1 id="_6">Конструирование дашбордов</h1>
+<p>В модуле "Исследование данных" удобно вести отладку запросов к данным,
+просматривать результаты их выполнения в отдельных интерактивных компонентах.</p>
+<p>Модуль "Конструирование дашбордов" предназначен для реализации комплекса
+мероприятий по разработке дашбордов и визуализации данных в различных форматах
+представления с широкими интерактивными возможностями.</p>
+<p>Этапы конструирования дашборда:</p>
+<ul>
+<li>
+<p><a href="#создание-дашборда">Создание дашборда</a>.</p>
+</li>
+<li>
+<p><a href="#создание-источников-данных">Создание источников данных</a>.</p>
+</li>
+<li>
+<p><a href="#размещение-компонентов-визуализации-данных-на-дашборде">Размещение компонентов визуализации данных на
+    дашборде</a>.</p>
+</li>
+<li>
+<p><a href="#наполнение-компонента-визуализации-данными">Наполнение компонентов визуализации
+    данными</a>.</p>
+</li>
+</ul>
+<h2 id="_7">Панель инструментов дашборда</h2>
+<p>На странице работы с дашбордом имеется Панель инструментов, которая состоит из
+4х блоков.</p>
+<p><img alt="" src="../media/f2322d0536303d2460431d9144634318.png" /></p>
+<p>Рассмотрим их подробнее слева направо (описание см. ниже):</p>
+<ol>
+<li>
+<p><a href="#blok_YPRAVLEN">Блок управления</a>.</p>
+</li>
+<li>
+<p><a href="#blok_instr_dash">Блок инструментов дашборда</a>.</p>
+</li>
+<li>
+<p><a href="#blok_nastr_dash">Блок настройки дашборда</a>.</p>
+</li>
+<li>
+<p><a href="#blok_upravl_prof">Блок управления профилем пользователя</a>.</p>
+</li>
+</ol>
+<p>1. Блок управления.</p>
+<p>Блок включает:</p>
+<ul>
+<li>
+<p>Название дашборда.</p>
+</li>
+<li>
+<p>Инструменты перехода: <img alt="" src="../media/6b1f7960c6f8056236a879f008da3389.png" /> – на
+    Главную страницу EVA и <img alt="" src="../media/252dda7f85603047208b2a1a85fcff3c.png" /> –
+    предыдущую страницу, с которой Вы работали.</p>
+</li>
+</ul>
+<p>2. Блок инструментов дашборда.</p>
+<p>Блок доступен только в Режиме редактирования. В него включены иконки,
+активирующие:</p>
+<p><em>Примечание.</em></p>
+<p><em>Любой используемый инструмент будет деактивирован при повторном нажатии на его
+иконку.</em></p>
+<ul>
+<li>
+<p><img alt="" src="../media/85132f3720df7472f2b106bfb22e19a7.png" /> – События (event).</p>
+<p>События происходят по определенному действию на компонентах визуализации.</p>
+</li>
+<li>
+<p><img alt="" src="../media/200b18d019b0a7fc3f413a7f32dce1f1.png" /> – Токены.</p>
+<p>Токены обеспечивают интерактивность отображения данных на компонентах
+визуализации.</p>
+</li>
+<li>
+<p><img alt="" src="../media/64720ed352634aa63a8d420338abaa76.png" /> – Источники данных (или
+    запросы к данным).</p>
+<p>Здесь определяются весь предполагаемый к использованию набор источников
+данных, которые затем могут быть назначены нескольким интерактивным
+компонентам, обеспечивая тем самым различные формы представления данных на
+дашборде.</p>
+<p>Для каждого источника предусмотрены кнопки запуска, редактирования, запуска
+по расписанию, экспорта в файл, формирования отчётов и удаления.</p>
+</li>
+<li>
+<p><strong><img alt="" src="../media/0f521ae177a26c61b9f0f1b1e50d8f18.png" /></strong> – Выбор доступных
+    компонентов визуализации.</p>
+</li>
+</ul>
+<p>3. Блок настройки дашборда:</p>
+<ul>
+<li>
+<p><img alt="" src="../media/e433afb5fd7aa83239e9feb6a6e8abfa.png" /> – Инструмент управления
+    фильтрами.</p>
+<p>Инструмент для настройки фильтров и фильтрации табличных данных.</p>
+</li>
+<li>
+<p><img alt="" src="../media/26493c1339412c3afd87cdb15636b52b.png" /> – Иконка активирует Окно
+    настроек режимов дашборда:</p>
+<ul>
+<li>
+<p>Режим редактирования – управляет:</p>
+<ul>
+<li>
+<p>Доступом к Блоку инструментов дашборда и их использованию.</p>
+</li>
+<li>
+<p>Доступом к набору инструментов и <a href="#7aa6mdpe20li">служебной
+    информации</a> на Панелях компонентов визуализации (за
+    исключением имени компонента, которое отображается всегда) и их
+    использованию.</p>
+</li>
+<li>
+<p>Видимостью компонента визуализации, для которого настройка
+    <a href="#pjeazd6qt1dm"><strong>visible</strong></a> <em>= false</em>.</p>
+</li>
+<li>
+<p>Доступом к режимам обслуживания вкладок: добавлять вкладки на
+    дашборд, корректировать названия вкладок, удалять вкладки с
+    дашборда.</p>
+<p>Пример дашборда с включенным Режимом редактирования (переключатель в
+положении: <em>да</em>) представлен на рисунке ниже:</p>
+<p><img alt="" src="../media/4bceeb9f8255629090733085bb6576ef.png" /></p>
+<p>А на следующем рисунке приведён пример с ограниченным функционалом
+за счет отключения Режима редактирования (переключатель в положении:
+<em>нет</em>):</p>
+<p><img alt="" src="../media/721567fb55956109e2c70a0fc8a53d32.png" /></p>
+<p>Кроме того, обратите внимание, на дашборде отображён только один
+интерактивный компонент, для второго компонента настройка <em>visible =
+false,</em> поэтому он был скрыт.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Режим использования сетки на дашборде: установка размера сетки и
+    управление отображением сетки.</p>
+</li>
+<li>
+<p>Режим изменения размера и положения компонента.</p>
+<p>Если режим включен (<em>да</em>, по умолчанию), то при клике левой кнопкой
+"мыши" у Вас будет возможность перемещать компонент визуализации по полю
+дашборда и менять его размер.</p>
+<p>Если режим отключен (<em>нет</em>), компоненты фиксируются на дашборде.
+Сохранение положения всех элементов и их размеры будет происходить
+только после отключения этого режима.</p>
+</li>
+<li>
+<p>Режим вкладок.</p>
+<p>При отключенном <em>Режиме вкладок</em> (<em>нет</em>, по умолчанию) <em>Панель вкладок</em>
+будет скрыта, для работы доступна только первая вкладка.</p>
+<p>Если <em>Режим вкладок</em> включен (<em>да</em>), но <em>Режим редактирования</em> отключен,
+то Панель вкладок будет отображена в нижней части экрана, а вкладки
+доступны только для просмотра.</p>
+<p>Если <em>Режим вкладок</em> включен при активном <em>Режиме редактирования</em>, то в
+<em>Панели вкладок</em> будут доступны следующие действия:</p>
+<ul>
+<li>
+<p><img alt="" src="../media/3b8065ff690be049294b90841e61740c.png" /> – добавлять новые
+    вкладки;</p>
+</li>
+<li>
+<p><img alt="" src="../media/18c4810f42abf06b0b28abf317895807.png" /> – корректировать
+    названия вкладок;</p>
+</li>
+<li>
+<p><img alt="" src="../media/6a3a27c5b90aa46aa2edd2775e0956ee.png" /> – удалять вкладки;</p>
+</li>
+<li>
+<p>рабочие области вкладок будут доступны для изменения.</p>
+<p><img alt="" src="../media/4b4bcaa9c98d91676e0943f6cfc79993.png" /></p>
+<p>По умолчанию после открытия дашборда для работы будет предоставлена
+первая вкладка.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><img alt="" src="../media/da124921589da4c4a05a7e41d54e70fd.png" /></strong> – Сохранение дашборда на
+    сервере.</p>
+<p>Следует иметь в виду, что сохраняется структура дашборда, размер и место
+размещения всех компонентов визуализации, токены, текст событий и текст
+запросов к данным. Однако, результаты запросов не сохраняются.
+Следовательно, при открытии дашборда запросы запускаются на выполнение
+автоматически.</p>
+</li>
+<li>
+<p><img alt="" src="../media/24be0954871b2770b0506248faea4e0d.png" /> – просмотр log-журнала.</p>
+</li>
+</ul>
+<p>4. Блок управления профилем пользователя.</p>
+<p><strong><img alt="" src="../media/55797f09a0aae766841dc5bd39ba6005.png" /></strong> – Доступ к <a href="#qypqve40mft2">Меню
+профиля</a>.</p>
+<p>Теперь перейдём к поэтапному процессу разработки дашборда.</p>
+<h2 id="_8">Создание дашборда</h2>
+<p>Работа начинается с создания дашборда, на котором Вы хотите скомпоновать
+аналитическую информацию по нужной Вам тематике.</p>
+<p>В модуле предусмотрена группировка дашбордов, поэтому на основной странице
+модуля во вкладке "Группы" выберите группу, в которой Вы хотите разместить новый
+дашборд. Будет активирована вкладка "Дашборды", здесь нажмите иконку
+<img alt="" src="../media/4f8888319a71d9336be01974c4af1bad.png" />.</p>
+<p>В открывшемся окне задайте имя нового дашборда.</p>
+<p>Если дашборд должен быть доступен в нескольких группах, то определите их в
+разделе "Управление группами" и подтвердите "Добавить группу дашборду".</p>
+<p>Завершите процедуру нажатием кнопки "Создать" для продолжения работы.</p>
+<p>В одном дашборде предусмотрена возможность создания нескольких рабочих областей
+на отдельных вкладках. Для этого необходимо активировать Режим использования
+вкладок (переключатель <strong>Вкладки</strong>) в <a href="#oy1ysnba92ti">Окне настроек режимов
+дашборда</a>. После чего в нижней части экрана появится <strong>Панель
+вкладок</strong>, и первая рабочая область будет размещена в первой вкладке "Без
+названия", имя для которой можно задать после нажатия на иконке
+<img alt="" src="../media/18c4810f42abf06b0b28abf317895807.png" />. Остальные вкладки создаются по
+нажатию на иконку <img alt="" src="../media/3b8065ff690be049294b90841e61740c.png" />. Удаление
+ненужной вкладки выполняется с помощью иконки
+<img alt="" src="../media/6a3a27c5b90aa46aa2edd2775e0956ee.png" />.</p>
+<h3 id="_9">Создание источников данных</h3>
+<p>Запросы прикрепляются к дашборду, это позволяет использовать одни и те же
+источники данных для различных компонентов визуализации.</p>
+<p>В запросе определяется источник, из которого будут загружены данные в
+интерактивный компонент, набор и формат отображаемых данных.</p>
+<p>На Панели инструментов дашборда после нажатия иконки
+<img alt="" src="../media/1e878a7f46df421b1f0ff21bc7eb8cf6.png" /> будет открыто окно для <a href="#l4yot4ff0eip">создания
+запросов к данным</a> – <em>источников данных</em>.</p>
+<p>По кнопке "Создать" или <img alt="" src="../media/16480dd9d9f36faa5611e5c2d26ba8c7.png" />
+откроется окно создания источника данных, в котором Вы вводите имя источника
+данных и текст запроса на языке OTL. Этих данных будет достаточно для создания
+запроса.</p>
+<p>При необходимости воспользуйтесь дополнительными настройками источника данных:</p>
+<ul>
+<li>
+<p>В полях "Временной интервал: начало" и "Временной интервал: конец"
+    определяются начало и окончание отрезка времени, за который нужно выгрузить
+    и обработать данные.</p>
+</li>
+<li>
+<p>Дополнительные параметры обычно свернуты. Их меняют крайне редко.</p>
+</li>
+<li>
+<p>Максимально возможное количество выводимых в визуальных компонент
+    результатов (поле "Максимальное кол-во строк"). По умолчанию оно составляет
+    – <em>1000</em> записей.</p>
+<p><strong>Важно</strong><em>!</em></p>
+<p><em>Эта настройка будет проигнорирована, если в запросе используется команда</em>
+<strong>head</strong><em>, которая и будет определять количество выводимых данных.</em></p>
+</li>
+<li>
+<p>Автоматический запуск источника данных при загрузке установлен по умолчанию.
+    Если в этом нет необходимости, снимите отметку.</p>
+</li>
+</ul>
+<p>После нажатия на кнопку "Создать" источник данных будет создан и добавлен в
+список источников данных.</p>
+<p>При необходимости отладку запроса можно выполнить в модуле программы
+"Исследование данных", открытом параллельно на другой вкладке браузера. А сюда
+перенести уже готовый запрос.</p>
+<h3 id="_10">Размещение компонентов визуализации данных на дашборде</h3>
+<p>В Панели инструментов дашборда по нажатию на иконку
+<strong><img alt="" src="../media/0f521ae177a26c61b9f0f1b1e50d8f18.png" /></strong> будет представлен перечень
+всех компонентов визуализации данных.</p>
+<p><img alt="" src="../media/81039de1e125be0c8c52a516c7b41352.png" /></p>
+<p>С помощью механизма "drag and drop" переместите нужный Вам компонент на полотно
+дашборда, воспользовавшись левой кнопкой "мыши".</p>
+<p>После чего он появится на дашборде в размерах, заданных в настройках по
+умолчанию. При необходимости Вы можете их изменить – если щёлкните левой кнопкой
+"мыши" на компоненте сразу же после создания, то по его контуру появится
+пунктирная рамка режима изменения размера и положения.</p>
+<p>Также на Панели управления визуализации Вам будут доступны режимы
+переименования, изменения настроек и удаления компонента.</p>
+<p>Часто данные, содержащиеся в индексах, требуют приведения их к виду, удобному
+для выполнения анализа. Поэтому, обычно данные сначала загружают в Таблицу для
+просмотра и затем проводят необходимые преобразования посредством доработки
+прикреплённых к ним запросов.</p>
+<p>Подробнее с каждым интерактивном компонентом можно ознакомиться в Приложении
+"Экранные формы Конструктора дашбордов" – глава
+"<a href="#_Визуализации">Визуализации</a>".</p>
+<h3 id="_11">Наполнение компонента визуализации данными</h3>
+<p>В поле "Выберите источник данных" определите, какой источник данных Вы хотите
+использовать для заполнения созданной визуализации, выбрав его из списка
+имеющихся на дашборде, и подтвердите сделанный выбор.</p>
+<p>В результате, с случае успешного выполнения выбранного запроса, данные будут
+отображены в заданном формате визуализации.</p>
+<p>Все действия, выполняемые по запросу, фиксируются в лог-журнале. И, если при
+выполнении запроса будут обнаружены ошибки, процесс будет остановлен, и
+подсветится иконка лог-журнала <img alt="" src="../media/9a87bc9fc1abec9640bba80a5f427fa4.png" />
+на Панели инструментов дашборда. Кликните на ней, чтобы ознакомиться с возникшей
+проблемой.</p>
+<p>Решить её можно здесь же, отредактировав запрос в окне "Источник данных" – на
+Панели инструментов дашборда по иконке
+<img alt="" src="../media/1e878a7f46df421b1f0ff21bc7eb8cf6.png" /> вызвать список запросов и
+открыть нужный в режиме редактирования по кнопке
+<img alt="" src="../media/7f239caf2d7c3136da2807d5b977511a.png" />. Однако, удобнее отладку запроса
+выполнять в модуле программы "Исследование данных", открытом параллельно на
+другой вкладке браузера. А сюда перенести уже готовый запрос.</p>
+<h3 id="_12">Сохранение дашборда на сервере</h3>
+<p>В процессе настройки дашборда вся информация о составляющих дашборда сохраняется
+в Локальном хранилище браузера на Вашем компьютере. Время хранения этой
+информации ограничено продолжительностью работы компьютера.</p>
+<p>Для сохранения дашборда и всех его составляющих в системе воспользуйтесь иконкой
+<strong><img alt="" src="../media/da124921589da4c4a05a7e41d54e70fd.png" /></strong> на Панели инструментов
+дашборда.</p>
+<p>В результате будет сохранена структура дашборда, размер и место размещения всех
+компонентов визуализации, токены, текст событий и текст запросов к источникам
+данных.</p>
+<p>Однако, результаты запросов не сохраняются.</p>
+<p>Следовательно, при очередном входе в программу или переходе на другое рабочее
+место запросы будут запущены на выполнение автоматически.</p>
+<h2 id="_13">Доработка источников данных</h2>
+<p>Если Вы уже освоили предыдущий уровень работы в EVA, тогда идём дальше.</p>
+<p>Выбираете для работы ранее созданный дашборд.</p>
+<p>После чего в системе будут выполнены проверки:</p>
+<ul>
+<li>
+<p>проверка выбранного дашборда в серверной части системы;</p>
+</li>
+<li>
+<p>если Вы ранее уже работали с дашбордом, то будет выполнено сравнение версий
+    дашборда на сервере и в Локальном Хранилище. Если версии отличаются, Вам
+    будет предложено обновить локальный дашборд.</p>
+</li>
+</ul>
+<p><img alt="" src="../media/1db037b249ce82e90b5ff10e1c9056ad.png" /></p>
+<p>Далее, после выбора дашборда будут активированы необходимые для работы источники
+данных. В случае наличия в Хранилище более свежих данных и после успешной
+обработки они будут отображены взамен устаревших.</p>
+<p><strong>Важно!</strong></p>
+<p><em>Если запрос отработал с ошибкой, то:</em></p>
+<ul>
+<li>
+<p><em>в</em> <strong>Таблицах</strong><em>,</em> <strong>Мультилинейных графиках</strong> <em>и</em> <strong>Числах</strong><em>,</em> <em>для
+    которых настройка</em> <strong>lastResult</strong><em>=true, будут отображены данные,
+    подготовленные в предыдущий сеанс работы с дашбордом и сохранённые в Базе
+    данных, а на Панели инструментов этих компонентов останется иконка</em>
+    <img alt="" src="../media/c74d0a086da416d51d894f765e7f4e1b.png" /><em>.</em></p>
+</li>
+<li>
+<p><em>Для</em> <strong>Таблиц</strong><em>,</em> <strong>Мультилинейных графиков</strong> <em>и</em> <strong>Чисел</strong> <em>с настройкой</em>
+    <strong>lastResult</strong><em>=false, а также</em> <strong>для остальных интерактивных компонентов</strong>
+    <em>будет выведен ошибочный результат.</em></p>
+</li>
+</ul>
+<p>Автоматический запуск запросов к источникам данных можно настроить в
+Планировщике после нажатия кнопки
+<strong><img alt="" src="../media/c56be946940b324d6958b5a940dff73b.png" /></strong>.</p>
+<p>Пора расширить набор возможностей по интерактивному отображению данных на
+дашбордах. Перейдём к рассмотрению использования:</p>
+<ul>
+<li>
+<p><a href="#использование-токенов-в-запросах">токенов</a>;</p>
+</li>
+<li>
+<p><a href="#использование-событий">событий</a>.</p>
+</li>
+</ul>
+<h3 id="_14">Использование токенов в запросах</h3>
+<p>Использование токенов обеспечивает интерактивность отображения данных на
+компонентах визуализации.</p>
+<p>Токены принимают свои значения в зависимости от действий пользователя и,
+обеспечивая таким образом в запросах фильтрацию данных, позволяют получить в
+интерактивных компонентах новые данные.</p>
+<p>Токены создаются в рамках дашборда. Для создания и редактирования токена
+активируйте иконку <img alt="" src="../media/470b6796bb8a9bcc768033411a3d137f.png" /> на Панели
+инструментов дашборда.</p>
+<p>Рассмотрим работу механизма токенов на примере использования компонентов логики,
+а именно:</p>
+<ul>
+<li>
+<p><a href="#_Использование_Кнопки_для">Кнопка</a>.</p>
+</li>
+<li>
+<p><a href="#использование-выпадающего-списка">Выпадающий список</a>.</p>
+</li>
+<li>
+<p><a href="#использование-текстового-блока">Текстовый блок</a>.</p>
+</li>
+<li>
+<p><a href="#использование-выбора-времени">Выбор времени</a>.</p>
+</li>
+</ul>
+<h4 id="_15">Использование Кнопки для выполнения запросов</h4>
+<p>При необходимости механизм токенов позволяет запускать запросы к данным на
+выполнение только после нажатия интерактивного компонента "Кнопка".</p>
+<p>Для этого выполните следующие действия:</p>
+<ol>
+<li>
+<p>Создайте необходимые для работы запросы к данным, и разместите на дашборде
+    интерактивные компоненты для вывода данных.</p>
+</li>
+<li>
+<p>Создайте токен:</p>
+</li>
+<li>
+<p>в поле "Элемент" укажите интерактивный компонент, данные в котором должны
+    обновляться по Кнопке,</p>
+</li>
+<li>
+<p>в поле "обновлять по кнопке" установить отметку.</p>
+</li>
+<li>
+<p>Добавьте в запрос команду <strong>search</strong> с токеном, которая будет инициировать
+    обновление данных в интерактивном компоненте. Токен должен быть заключён в
+    символы доллара ($).</p>
+<p>Например, запрос на обновление данных в таблице <em>table</em> по Кнопке, для
+которой задан токен <em>token_table</em>:</p>
+<p>| makeresults count=100<br />
+| streamstats count as x<br />
+| search x=$token_table$</p>
+</li>
+<li>
+<p>Поместите на дашборд компонент "Кнопка".</p>
+</li>
+<li>
+<p>Оформите кнопку в нужном формате, используя уникальные настройки:</p>
+</li>
+<li>
+<p><strong>color</strong> – задаёт цвет текста кнопки;</p>
+</li>
+<li>
+<p><strong>backgroundcolor</strong> – определяет цвет фона кнопки;</p>
+</li>
+<li>
+<p><strong>name</strong> – выводит надпись на кнопке;</p>
+</li>
+<li>
+<p><strong>fontSize</strong> – задаёт размер шрифта надписи на кнопке;</p>
+</li>
+<li>
+<p><strong>underline</strong> – подчеркивает надпись на кнопке.</p>
+</li>
+<li>
+<p>Установите настройке <strong>Submit</strong>, которая управляет запуском запросов на
+    выполнение по кнопке, значение <em>true</em>.</p>
+</li>
+<li>
+<p>Сохраните все установленные настройки Кнопки.</p>
+</li>
+</ol>
+<p>В результате после нажатия на интерактивную кнопку данные в визуальных
+компонентах будут обновлены.</p>
+<h4 id="_16">Использование Выпадающего списка</h4>
+<p>Возможность оперативно менять набор анализируемых данных в интерактивных
+компонентах визуализации обеспечивают "Выпадающий список" и механизм токенов.</p>
+<p>Для этого среди исходных данных должен присутствовать массив, в котором
+установлено соответствие между идентификаторами анализируемых данных и записями
+формируемого выпадающего списка.</p>
+<p>Кроме того, в запросе, прикреплённом к интерактивному компоненту визуализации
+данных, должен быть задан токен, в который будет подставляться набор значений из
+выпадающего списка.</p>
+<p>Далее действуйте в соответствии с указанной последовательностью по настройке
+выпадающего списка:</p>
+<ol>
+<li>
+<p>На дашборд поместите компонент "Выпадающий список".</p>
+</li>
+<li>
+<p>При необходимости настройте
+    (<img alt="" src="../media/b97821c789d64261e67160d206f22990.png" />) количество строк в
+    Выпадающем списке, доступных для выбора (опция <em>multiple</em>):</p>
+<ol>
+<li>
+<p><em>multiple=false</em> (значение по умолчанию) – список может содержать только
+    одну строку,</p>
+</li>
+<li>
+<p><em>multiple=true</em> – список будет состоять из множества строк.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Установите соответствие между данными и записями списка:</p>
+<ol>
+<li>
+<p><strong>столбец данных</strong> – столбец, из значений которого будет сформирован
+    выпадающий список;</p>
+</li>
+<li>
+<p><strong>связанный столбец данных</strong> – столбец, данные из которого будут
+    подставляться в токен в процессе выполнения запроса и отображаться на
+    компоненте визуализации.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Из сформированного списка отберите одну или несколько строк (зависит от
+    опции <em>multiple</em>), которые будут переданы в токен.</p>
+</li>
+<li>
+<p>Создайте токен, который будет позже подставлен в запрос, с параметрами:</p>
+<ol>
+<li>
+<p><strong>Элемент</strong> – идентификатор Выпадающего списка,</p>
+</li>
+<li>
+<p><strong>Действие</strong> – <em>change</em>,</p>
+</li>
+<li>
+<p><strong>Префикс, Суффикс, Разделитель</strong> – по необходимости.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Подставьте токен в запрос, прикреплённый к компоненту визуализации данных.
+    Токен должен быть заключён в символы доллара ($). <br />
+    Например: <strong>$</strong><em>tkn_select</em><strong>$</strong>.</p>
+</li>
+</ol>
+<p>В результате на компоненте визуализации будут отображены данные, отобранные по
+заданным в списке значениям. Например, Мультилинейный график будет содержать
+линии, построенные только по метрикам, выбранным в выпадающем списке.</p>
+<h4 id="_17">Использование Текстового блока</h4>
+<p>Текстовый блок также используется механизмом токенов в качестве текстовых
+заготовок для запросов.</p>
+<p>Для этого:</p>
+<ul>
+<li>
+<p>На дашборд поместите интерактивный компонент "Текстовый блок".</p>
+</li>
+<li>
+<p>В текстовом поле напишите часть запроса или значение токена и нажмите на
+    кнопку "Подтвердить". После чего подготовленный текст будет сохранён в
+    качестве параметра компонента.</p>
+</li>
+<li>
+<p>Для этого компонента создайте токен с параметрами:</p>
+<ul>
+<li>
+<p><strong>Элемент</strong> – идентификатор Текстового блока,</p>
+</li>
+<li>
+<p><strong>Действие</strong> – <em>accept</em>.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Подставьте токен в запрос. В этом случае он должен быть заключён в символы
+    доллара ($). Например: <strong>$</strong><em>tkn_textarea</em><strong>$</strong>.</p>
+</li>
+</ul>
+<p>Использование Текстового блока активируется кнопкой
+<img alt="" src="../media/e30cece7f3a16e40cbf55e51d571a5e2.png" />, если настройка <strong>searchBtn</strong> <em>=
+true</em>. По умолчанию (<strong>searchBtn</strong><em>=false</em>) кнопка отсутствует.</p>
+<p>Для Текстового блока предусмотрены <a href="#_Текстовый_блок">настройки видимости</a>.</p>
+<h4 id="_18">Использование Выбора времени</h4>
+<p>Ещё один компонент, который удобно применять через механизм токенов, это –
+<a href="#_Выбор_времени">Выбор времени</a>.</p>
+<p>Он предназначен для выбора интервала времени.</p>
+<p>Компонент использует для работы служебное поле <em>_time</em>.</p>
+<p>Для этого:</p>
+<ul>
+<li>
+<p>На дашборд помеcтите компонент
+    <img alt="" src="../media/48e313210ae32a0f60f626b8adc3af9e.png" /> "Выбор времени".</p>
+</li>
+<li>
+<p>Создайте для этого компонента один или два токена (в зависимости от
+    настроенного формата) с параметрами:</p>
+<ul>
+<li>
+<p><strong>Элемент</strong> – идентификатор компонента "Выбор времени",</p>
+</li>
+<li>
+<p><strong>Действие</strong> – <em>select</em>,</p>
+</li>
+<li>
+<p><strong>Свойство</strong>:</p>
+<ul>
+<li>
+<p><em>start</em> – для передачи в запрос начального значения временного
+    интервала,</p>
+</li>
+<li>
+<p><em>end</em> – для передачи в запрос конечного значения временного
+    интервала.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Подставьте в запрос подготовленные токены, заключенные в символы доллара
+    ($), используя команду <em>search</em>.</p>
+<p>Например, для отображения данных за период следует указать:</p>
+<p>| search _time>=$tkn_start$ AND _time&lt;=$tkn_end$</p>
+</li>
+</ul>
+<p>Для ограничения визуализации данных временным интервалом на компоненте "Выбор
+времени" раскройте панель "Выберите дату и время" и определите временные
+характеристики одним из предложенных способов:</p>
+<ol>
+<li>
+<p>Укажите количество часов, минут, секунд, которые прошли от требуемого
+    значения до текущего времени.</p>
+</li>
+<li>
+<p>Задайте начальное или конечное значение даты и времени в окне выбора даты и
+    времени.</p>
+</li>
+<li>
+<p>Определите временной диапазон путём задания начальной и конечной даты в окне
+    выбора даты и времени.</p>
+</li>
+<li>
+<p>Введите дату и время вручную в формате Epoch time.</p>
+</li>
+</ol>
+<p>После подтверждения заданных значений клавишей "Установить" появится
+информационная строка с выбранным диапазоном.</p>
+<p>После чего отработают запросы с прописанными токенами. И в результате на
+компонентах визуализации, к которым прикреплены отработавшие запросы, данные
+будут представлены за заданный интервал времени.</p>
+<h3 id="_19">Использование токенов в названиях визуальных компонентов</h3>
+<p>Часто на дашборде используются взаимосвязанные интерактивные компоненты, когда
+один компонент содержит обобщающие данные, а на второй компонент выводится
+детальная информация только по одному элементу, выбранному на первом компоненте.</p>
+<p>В EVA есть возможность установить визуальную связь второго компонента с
+элементом, выбранным на первом интерактивном компоненте, задействовав в названии
+значение токена, использованного для отбора данных. Для этого следует
+активировать режим редактирования по иконке
+<img alt="" src="../media/455488a041699fc42eca6730cc9a45a4.png" /> на Панели инструментов второго
+компонента и к имени добавить этот токен, заключив его в символы "<strong>$</strong>",
+например: "<em>Дебиты скважины</em> <strong>$tknWell$</strong>".</p>
+<h3 id="_20">Использование событий</h3>
+<p>В EVA предусмотрена настройка взаимодействия между компонентами визуализации
+данных, реализуемая в ответ на действие пользователя. В этом случае действие
+пользователя регламентируется событием.</p>
+<p>Окно для настройки событий открывается при нажатии иконки
+<img alt="" src="../media/20b18faeaf98c292f3cac38ba550cce0.png" /> на Панели инструментов дашборда.</p>
+<p>В настоящее время реализованы следующие события:</p>
+<ul>
+<li>
+<p><a href="#событие-изменения-свойства-компонента-onclick--set">Событие изменения свойства
+    компонента</a> (<em>onclick …
+    set</em>).</p>
+<p>Нажатие на область 1го визуального компонента приведёт к изменению
+характеристики 2го компонента.</p>
+</li>
+<li>
+<p><a href="#событие-заполнения-отчета-onclickchangereport">Событие заполнения отчёта по
+    запросу</a> (<em>onclick …
+    changeReport</em>).</p>
+<p>По нажатию на интерактивном компоненте данные из запроса будут перенесены в
+отчёт.</p>
+</li>
+<li>
+<p><a href="#событие-перехода-с-svg-на-другой-дашборд-onclick-svg--go">Событие перехода с Svg на другой
+    дашборд</a>
+    (<em>onclick svg … go</em>).</p>
+<p>Событие с использованием токена.</p>
+<p>По нажатию на интерактивном компоненте Изображение будет выполнен переход на
+другой дашборд с последующим изменением значения токена.</p>
+</li>
+<li>
+<p><a href="#_Событие_перехода_с_1">Событие перехода c Heatmap на другой дашборд</a>
+    <em>(onclick heatmap … go)</em></p>
+<p>Событие с использованием токена.</p>
+<p>По нажатию на интерактивном компоненте Тепловая карта будет выполнен переход
+на другой дашборд или его вкладку с передачей значения в токен.</p>
+</li>
+<li>
+<p><a href="#событие-перехода-с-map-на-другой-дашборд-onclick-map--go">Событие перехода с Map на другой
+    дашборд</a>
+    <em>(onclick map … go)</em></p>
+<p>Событие с использованием токена.</p>
+<p>По нажатию на интерактивном компоненте Карта будет выполнен переход на
+другой дашборд с передачей значения в токен.</p>
+</li>
+<li>
+<p><a href="#событие-сравнения-значений-токена-ontokencompareset">Событие сравнения значений
+    токена</a>
+    (<em>OnTokenCompare...set</em>).</p>
+<p>В этом событии используется токен.</p>
+<p>В случае выполнения условия сравнения токена с заданным значением будет
+выполнена модификация характеристики визуального компонента и отображения на
+нём данных.</p>
+</li>
+<li>
+<p><a href="#_gcbwdtwhrhlx">С</a><a href="#_gcbwdtwhrhlx">обытие сравнения данных Таблицы</a>
+    <em>(OnDataCompare...set)</em>.</p>
+<p>Цветовое выделение элементов визуального компонента "Таблица" (столбцов,
+строк, ячеек) в выбранный цвет при выполнении заданного условия.</p>
+</li>
+</ul>
+<p>Подробное описание синтаксиса событий представлено ниже.</p>
+<h4 id="onclick-set">Событие изменения свойства компонента (onclick … set)</h4>
+<p><strong>onclick(</strong><em>&lt;visual1></em><strong>,</strong><em>&lt;area></em><strong>,set(</strong><em>&lt;visual2></em><strong>,</strong><em>&lt;char></em><strong>,</strong><em>&lt;char_val></em><strong>))</strong>,
+где:</p>
+<ul>
+<li>
+<p><strong>visual1</strong> – идентификатор первого интерактивного компонента, в котором
+    будет выполнено действие пользователя (идентификатор выведен на панели
+    компонента в квадратных скобках);</p>
+</li>
+<li>
+<p><strong>area</strong> – область на первом компоненте, нажатие на которую приведёт к
+    изменению характеристики второго компонента (необязательный параметр);</p>
+</li>
+<li>
+<p><strong>visual2</strong> <em>–</em> идентификатор второго интерактивного компонента, у которого
+    нужно изменить настройку;</p>
+</li>
+<li>
+<p><strong>char</strong> – настройка второго компонента, которую необходимо изменить;</p>
+</li>
+<li>
+<p><strong>char_val</strong> – значение, которое будет назначено настройке второго
+    компонента.</p>
+<p>Пример.</p>
+<p>При нажатии на точку на Линейном графике отобразить Таблицу.</p>
+<p>При нажатии (<em>onclick</em>) кнопкой "мыши" в Линейном графике <em>lineChart</em> на
+точку <em>point</em> установить (<em>set</em>) для Таблицы <em>table</em> настройку видимости
+<em>visible</em> в позицию <em>true</em>.</p>
+<p><em>onclick(lineChart,point,set(table,visible,true))</em></p>
+</li>
+</ul>
+<h4 id="onclickchangereport">Событие заполнения отчета (onclick...changeReport)</h4>
+<p><strong>onclick(</strong><em>&lt;visual></em><strong>,</strong>
+<strong>changeReport(</strong><em>&lt;req></em><strong>,</strong><em>&lt;templ_rep></em><strong>))</strong>, где</p>
+<ul>
+<li>
+<p><strong>visual</strong> – идентификатор интерактивного компонента, на котором следует
+    нажать левую кнопку "мыши" для выполнения события;</p>
+</li>
+<li>
+<p><strong>req</strong> – название запроса, данные из которого будет внесены в отчёт;</p>
+</li>
+<li>
+<p><strong>templ_rep</strong> – имя файла шаблона, на основе которого будет сформирован
+    отчёт.</p>
+</li>
+</ul>
+<p>После выполнения события будет сформирован файл отчёта или архив, если отчётов
+несколько.</p>
+<p>Пример.</p>
+<p>При клике (<em>onclick</em>) "мыши" на кнопку <em>button-2</em> сформировать отчёт
+(<em>changeReport</em>) на основании данных из запроса <em>sid-2</em> и шаблона
+<em>testreport.xlsx</em>.</p>
+<p><em>onclick(button-2, changeReport(sid-2,testreport.xlsx))</em></p>
+<h4 id="svg-onclick-svg-go">Событие перехода с Svg на другой дашборд (onclick svg … go)</h4>
+<p><strong>onclick(</strong><em>&lt;</em><strong>svg</strong><em>></em><strong>,go(</strong><em>&lt;dash></em><strong>,</strong><em>&lt;token></em><strong>,</strong><em>&lt;val></em><strong>))</strong>,
+где</p>
+<ul>
+<li>
+<p><strong>svg</strong> – идентификатор интерактивного компонента <strong>Изображение</strong> (Svg), при
+    нажатии на котором будет выполнен переход на другой дашборд <em>dash</em> и токену
+    <em>token</em> передано значение <em>val</em>.</p>
+</li>
+<li>
+<p><strong>dash</strong> – идентификатор дашборда, на который будет выполнен переход.</p>
+</li>
+<li>
+<p><strong>token</strong> – название токена на дашборде <em>dash</em>, значение которого будет
+    изменено.</p>
+<p>Можно передать несколько токенов и несколько значений к ним. В этом случае
+названия токенов и их значения пишутся последовательно в квадратных скобках:</p>
+<p><em>[roomer,cardova],[24,36]</em></p>
+</li>
+<li>
+<p><strong>val</strong> – новое значение токена.</p>
+<p>В значении можно передать токен. В этом случае он должен быть заключён в
+символы доллара ($).Например: <strong>$</strong><em>tkn_1</em><strong>$</strong>.</p>
+<p>Пример.</p>
+<p>При щелчке левой кнопкой "мыши" (<em>onclick</em>) на Изображении <em>csvg</em> выполнить
+переход (<em>go</em>) на дашборд <em>Origin-2</em> и изменить значение токена <em>roomer</em> на
+"<em>24</em>".</p>
+<p><em>onclick(csvg, go(Origin-2,roomer,24))</em></p>
+</li>
+</ul>
+<h4 id="heatmap-onclick-heatmap-go">Событие перехода с Heatmap на другой дашборд (onclick heatmap … go)</h4>
+<p><strong>onclick(</strong><em>&lt;</em><strong>heatmap</strong><em>></em><strong>,go(</strong><em>&lt;dash></em><strong>,</strong><em>&lt;token>[</em><strong>,</strong><em>&lt;tab>][</em><strong>,[</strong><em>&lt;tknBegin></em><strong>,</strong><em>&lt;tknEnd></em><strong>]</strong><em>]</em><strong>))</strong>,
+где</p>
+<ul>
+<li>
+<p><strong>heatmap</strong> – идентификатор интерактивного компонента <strong>Тепловая карта</strong>
+    (Heatmap), из которого при нажатии на кнопку "Детали" будет выполнен переход
+    на другой дашборд <em>dash</em> или его вкладку <em>tab</em> и передано значение поля,
+    заданного в настройках, в токен <em>token</em>.</p>
+</li>
+<li>
+<p><strong>dash</strong> <em>–</em> идентификатор дашборда, на который будет выполнен переход.</p>
+</li>
+<li>
+<p><strong>token</strong> – название токена на дашборде <em>dash</em>, в который будет передано
+    значение из выбранной ячейки Тепловой карты <em>heatmap</em>.</p>
+</li>
+<li>
+<p><strong>tab</strong> – номер вкладки дашборда <em>dash</em>, на которую должен быть выполнен
+    переход.</p>
+</li>
+<li>
+<p><strong>tknBegin</strong> – название токена на дашборде с <em>heatmap</em>, в который будет
+    передано значение даты начала периода из визуального компонента "Выбор
+    времени".</p>
+</li>
+<li>
+<p><strong>tknEnd</strong> – название токена на дашборде с <em>heatmap</em>, в который будет
+    передано значение даты окончания периода из визуального компонента "Выбор
+    времени".</p>
+<p>Пример.</p>
+<p>При нажатии (<em>onclick</em>) на Тепловой карте <em>heatmap</em> выполнить переход (<em>go</em>)
+на вкладку <em>2</em> дашборда <em>256</em> и передать в неё токен <em>tkn_1</em>.</p>
+<p><em>onclick(heatmap, go(256,tkn_1,2))</em></p>
+</li>
+</ul>
+<h4 id="map-onclick-map-go">Событие перехода с Map на другой дашборд (onclick map … go)</h4>
+<p><strong>onclick(</strong><em>&lt;</em><strong>map</strong><em>></em><strong>,go(</strong><em>&lt;dash></em><strong>,</strong><em>&lt;token></em><strong>))</strong>, где</p>
+<ul>
+<li>
+<p><strong>map</strong> – идентификатор интерактивного компонента <strong>Карта</strong> (Map), из
+    которого при нажатии на элемент карты будет выполнен переход на другой
+    дашборд <em>dash</em> и выведена подробная информация об этом элементе.</p>
+</li>
+<li>
+<p><strong>dash</strong> <em>–</em> идентификатор дашборда, на который будет выполнен переход.</p>
+</li>
+<li>
+<p><strong>token</strong> – название настроенного токена на дашборде <em>dash</em>, в который будет
+    передано значение из выбранного элемента Карты <em>map</em>.</p>
+<p>Пример.</p>
+<p>При нажатии (<em>onclick</em>) на Карте <em>map</em> выполнить переход (<em>go</em>) на дашборд
+<em>4256</em> и передать в неё токен <em>tkn</em>.</p>
+<p><em>onclick(map, go(4256,tkn))</em></p>
+</li>
+</ul>
+<h4 id="ontokencompareset">Событие сравнения значений токена (OnTokenCompare...set)</h4>
+<p><strong>OnTokenCompare(</strong><em>&lt;compare></em><strong>,</strong><em>&lt;token></em><strong>,</strong><em>&lt;val></em><strong>,set(</strong><em>&lt;visual></em><strong>,</strong><em>&lt;char></em><strong>,</strong><em>&lt;char_val></em><strong>)</strong>,
+где</p>
+<ul>
+<li>
+<p><strong>compare</strong> – ключевое слово для сравнения:</p>
+<ul>
+<li>
+<p><em>equals</em> – равно,</p>
+</li>
+<li>
+<p><em>over</em> – больше чем,</p>
+</li>
+<li>
+<p><em>less</em> – меньше чем,</p>
+</li>
+<li>
+<p><em>in</em> – совпадает с одним из значений массива,</p>
+</li>
+<li>
+<p><em>between</em> – больше чем левая граница, но меньше чем правая.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>token</strong> – название токена, который будет сравниваться с заданным значением
+    <strong>val</strong>.</p>
+</li>
+<li>
+<p><strong>val</strong> – значение для сравнения.</p>
+</li>
+<li>
+<p><strong>visual</strong> – идентификатор интерактивного компонента, у которого нужно
+    изменить настройку в случае выполнения условия сравнения токена <strong>token</strong> с
+    заданным значением <strong>val</strong>.</p>
+</li>
+<li>
+<p><strong>char</strong> – настройка компонента, которая будет изменена;</p>
+</li>
+<li>
+<p><strong>char_val</strong> – значение настройки компонента, которое будет установлено.</p>
+<p>Пример.</p>
+<p>Если при сравнении (OnTokenCompare) токен <em>key</em> равен (equals) значению
+<em>value</em>, то Таблице <em>table</em> будет установлено свойство видимости <em>visible</em> в
+<em>false</em>.</p>
+<p><em>OnTokenCompare(equals,key,value,set(table,visible,false))</em></p>
+<p>Другими словами, если значение токена <em>key</em> будет равно <em>value</em>, то Таблица
+исчезнет с дашборда.</p>
+</li>
+</ul>
+<h4 id="ondatacompareset">Событие сравнения данных Таблицы (OnDataCompare...set)</h4>
+<p><strong>OnDataCompare(</strong><em>&lt;compare></em><strong>,</strong><em>&lt;column></em><strong>,</strong><em>&lt;val></em><strong>,set(</strong><em>&lt;table></em><strong>,</strong><em>&lt;element></em><strong>,</strong><em>&lt;color></em><strong>)</strong>,
+где</p>
+<ul>
+<li>
+<p><strong>compare</strong> – ключевое слово для сравнения:</p>
+<ul>
+<li>
+<p><em>equals</em> – равно,</p>
+</li>
+<li>
+<p><em>over</em> – больше чем,</p>
+</li>
+<li>
+<p><em>less</em> – меньше чем.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>column</strong> – имя столбца Таблицы <strong>table</strong>, значения которого будет
+    сравниваться с заданным значением <strong>val</strong>.</p>
+</li>
+<li>
+<p><strong>val</strong> – значение для сравнения.</p>
+</li>
+<li>
+<p><strong>table</strong> – идентификатор интерактивного компонента "Таблица", в котором
+    нужно изменить цвет элементов, удовлетворяющих условиям сравнения.</p>
+</li>
+<li>
+<p><strong>element</strong> – элемент Таблицы <strong>table</strong>, цвет которого будет изменён:</p>
+<ul>
+<li>
+<p><em>columncolor</em> – столбец,</p>
+</li>
+<li>
+<p><em>rowcolor</em> – строка,</p>
+</li>
+<li>
+<p><em>cellcolor</em> – ячейка.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>color</strong> – новый цвет фона элемента Таблицы <strong>table</strong>, удовлетворяющего
+    заданному условию.</p>
+</li>
+</ul>
+<p>Пример.</p>
+<p>Если при сравнении (OnDataCompare) поле <em>a</em> будет иметь значение, равное
+(equals) <em>true</em>, то в Таблице <em>table</em> следует изменить фон строк, имеющих это
+значение, на <em>green</em>.</p>
+<p><em>OnDataCompare(equals,a,true,set(table,rowcolor,green))</em></p>
+<h2 id="_21">Использование дашбордов</h2>
+<p>Как мы уже говорили, результаты работы запросов к источникам данных в системе не
+сохраняются. Они сохраняются только в Локальной Базе данных на Вашем браузере.</p>
+<p>Следовательно, при очередном входе в программу или переходе на другое рабочее
+место интерактивные компоненты будут содержать данные, подготовленные в
+предыдущий сеанс работы с дашбордом и сохранённые в Локальной Базе данных. Для
+актуализации данных будет автоматически запущены запросы к данным. Этот процесс,
+в зависимости от объёма обрабатываемой информации и имеющихся технических
+возможностей, может занять продолжительное время. При наличии в Хранилище более
+свежих данных после успешной обработки они будут занесены в локальную Базу
+данных и отображены на интерактивных компонентах взамен устаревших.</p>
+<p>В случае, если запрос отработал с ошибкой, то дальнейшие действия системы по
+отображению данных зависят от типа интерактивного компонента и настройки
+<strong>lastResult</strong>, реализованной для <strong>Таблиц</strong>, <strong>Мультилинейных графиков</strong> и
+<strong>Чисел</strong>:</p>
+<ul>
+<li>
+<p>В <strong>Таблицах</strong>, <strong>Мультилинейных графиках</strong> и <strong>Числах</strong> с настройкой
+    <strong>lastResult</strong><em>=true</em>  будут отображены данные, подготовленные в предыдущем
+    сеансе работы с дашбордом и сохранённые в Базе данных.</p>
+</li>
+<li>
+<p>Для <strong>Таблиц</strong>, <strong>Мультилинейных графиков</strong> и <strong>Чисел</strong> с настройкой
+    <strong>lastResult</strong><em>=false</em>, а также <strong>для остальных интерактивных компонентов</strong>
+    будет выведен ошибочный результат.</p>
+</li>
+</ul>
+<p>В результате будут переданы данные и значения заданных токенов, на основании
+которых будут заполнены интерактивные компоненты дашборда.</p>
+<p>В случае настроенного Планировщика запуск запросов к источникам данных будет
+выполняться автоматически с заданной периодичностью (настройка Планировщика
+выполняется отдельно для каждого запроса после нажатия в списке запросов кнопки
+<strong><img alt="" src="../media/f24322ea8dc3c901a65e29069bf06b72.png" /></strong>.</p>
+<p><img alt="" src="../media/bdcf2126fe34c53196c21c81e13a174a.png" /></p>
+<p>Если запрос вернул данные с ошибкой, то подсветится иконка лог-журнала
+<img alt="" src="../media/9a87bc9fc1abec9640bba80a5f427fa4.png" />, где можно ознакомиться с
+проблемой выполнения запроса, внести необходимые правки и продолжить работу.</p>
+<h2 id="_22">Экспорт и импорт дашбордов</h2>
+<p>В EVA предусмотрен экспорт и импорт настроенных дашбордов.</p>
+<p>Данная функциональность может быть применена, например, для:</p>
+<ul>
+<li>
+<p>Переноса данных из одной версии программы в другую.</p>
+</li>
+<li>
+<p>Выгружены на Ваш компьютер для дальнейшей работы в локальном режиме.</p>
+</li>
+</ul>
+<p>Режимы экспорта/импорта активируются в основном окне модуля "Конструирование
+дашбордов по кнопке <img alt="" src="../media/abe951610c75dd1bf951d2253243be9f.png" />.</p>
+<p>В режиме экспорта Вы выгружаете дашборды, относящиеся к одной или нескольким
+группам, предварительно выбрав их в предложенном списке групп, с помощью кнопки
+"Экспортировать" в папку на Вашем компьютере.</p>
+<p>Для загрузки выгруженных файлов в EVA воспользуйтесь этим же окном. В нижней
+части выберите нужный файл и нажмите кнопку "Импортировать".</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            К началу
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Нижний колонтитул">
+      
+        
+        <a href="../../Installation/Install/" class="md-footer__link md-footer__link--prev" aria-label="Назад: Установка WDC.Платформы" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Назад
+              </span>
+              Установка WDC.Платформы
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../EVA/EVA/" class="md-footer__link md-footer__link--next" aria-label="Вперед: EVA" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Вперед
+              </span>
+              EVA
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["header.autohide", "navigation.sections", "navigation.indexes", "navigation.top", "navigation.tabs"], "translations": {"clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "search.config.lang": "ru", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "\u041f\u043e\u0438\u0441\u043a", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version.title": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "search": "../../../assets/javascripts/workers/search.bd0b6b67.min.js", "version": {"default": "latest", "provider": "mike"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.467223ff.min.js"></script>
+      
+        <script src="../../../javascripts/extra.js"></script>
+      
+    
+  </body>
+</html>
