@@ -12,7 +12,7 @@
 
 Архитектура Платформы представлена на рисунке:
 
-![](../media/4dac2ae4aaec937babb763736825cfd9.jpg)
+![](./General/General_description/media/4dac2ae4aaec937babb763736825cfd9.jpg)
 
 Ниже описываются основные компоненты WDC.Платформы.
 
